@@ -1,0 +1,133 @@
+site_name: ProtocolWarden
+site_description: Canonical public-facing knowledge surface for the ProtocolWarden ecosystem
+site_url: https://protocolwarden.github.io/
+repo_url: https://github.com/ProtocolWarden/ProtocolWarden.github.io
+repo_name: ProtocolWarden/ProtocolWarden.github.io
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+plugins:
+  - search
+nav:
+  - Home: index.md
+  - Getting Started:
+      - getting-started/index.md
+  - Overview:
+      - Ecosystem: overview/ecosystem.md
+      - Design Philosophy: overview/design-philosophy.md
+      - Public vs Private: overview/public-vs-private.md
+      - Architecture Principles: overview/architecture-principles.md
+      - Operational Model: overview/operational-model.md
+      - Ecosystem Map: overview/ecosystem-map.md
+  - Architecture:
+      - Overview: architecture/index.md
+      - Platform Architecture Charter: architecture/platform-architecture-charter.md
+      - Layered Architecture: architecture/layered-architecture.md
+      - Orchestration Model: architecture/orchestration-model.md
+      - Execution Flow: architecture/execution-flow.md
+      - Runtime Binding: architecture/runtime-binding.md
+      - Capability Model: architecture/capability-model.md
+      - Audit Architecture: architecture/audit-architecture.md
+      - Artifact Flow: architecture/artifact-flow.md
+      - Observability Model: architecture/observability-model.md
+      - Topology Model: architecture/topology-model.md
+  - Ontology:
+      - Entities: ontology/entities.md
+      - Vocabulary: ontology/vocabulary.md
+      - Execution Objects: ontology/execution-objects.md
+      - Governance Objects: ontology/governance-objects.md
+      - Audit Objects: ontology/audit-objects.md
+      - Glossary Index: ontology/glossary-index.md
+  - Topology:
+      - Ecosystem Graph: topology/ecosystem-graph.md
+      - Repo Dependencies: topology/repo-dependencies.md
+      - Execution Routing: topology/execution-routing.md
+      - Service Relationships: topology/service-relationships.md
+      - Artifact Flow: topology/artifact-flow.md
+      - Control Plane: topology/control-plane.md
+  - Governance:
+      - Architectural Invariants: governance/architectural-invariants.md
+      - Audit Policy: governance/audit-policy.md
+      - Boundary Enforcement: governance/boundary-enforcement.md
+      - Schema Evolution: governance/schema-evolution.md
+      - Capability Governance: governance/capability-governance.md
+      - Runtime Governance: governance/runtime-governance.md
+      - Drift Detection: governance/drift-detection.md
+  - Protocols:
+      - Overview: protocols/index.md
+      - CxRP: protocols/cxrp.md
+      - RxP: protocols/rxp.md
+      - PlatformManifest: protocols/platformmanifest.md
+      - Execution Contracts: protocols/execution-contracts.md
+      - Runtime Contracts: protocols/runtime-contracts.md
+  - Contracts:
+      - Overview: contracts/index.md
+  - Repos:
+      - OperationsCenter: repos/operationscenter.md
+      - SwitchBoard: repos/switchboard.md
+      - CxRP: repos/cxrp.md
+      - RxP: repos/rxp.md
+      - ExecutorRuntime: repos/executorruntime.md
+      - Custodian: repos/custodian.md
+      - PlatformManifest: repos/platformmanifest.md
+      - SourceRegistry: repos/sourceregistry.md
+      - OperatorConsole: repos/operatorconsole.md
+      - PlatformDeployment (WorkStation): repos/workstation.md
+      - Warehouse: repos/warehouse.md
+  - Diagrams:
+      - Overview: diagrams/index.md
+      - Ecosystem Layered Stack: diagrams/ecosystem/layered-stack.md
+      - Execution Sequence: diagrams/execution/sequence.md
+      - Governance Enforcement: diagrams/governance/enforcement.md
+      - Manifest Projection: diagrams/manifests/projection.md
+  - Observability:
+      - Audit System: observability/audit-system.md
+      - Representative Runs: observability/representative-runs.md
+      - Drift Analysis: observability/drift-analysis.md
+      - Artifact Indexing: observability/artifact-indexing.md
+      - Execution Traces: observability/execution-traces.md
+      - Reporting: observability/reporting.md
+  - Audits:
+      - audits/index.md
+  - Glossary:
+      - glossary/index.md
+  - Changelog:
+      - changelog/index.md
+  - Roadmap:
+      - roadmap/index.md
+      - Slice 01 - Canonical Docs Consolidation: roadmap/slice-01-canonical-docs-consolidation.md
+  - Generated:
+      - generated/index.md

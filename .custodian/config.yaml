@@ -1,0 +1,19 @@
+repo_key: ProtocolWarden.github.io
+src_root: docs
+tests_root: tests
+
+privacy:
+  require_private_repo_name_source: true
+
+audit:
+  exclude_paths:
+    T1:
+      - "docs/**"
+    T6:
+      - "docs/**"
+    T7:
+      - "docs/**"
+
+tools:
+  ruff: false
+  vulture: false

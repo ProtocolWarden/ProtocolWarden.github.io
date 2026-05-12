@@ -1,0 +1,11 @@
+graph TD
+    Platform[PlatformManifest\nPublic language + public-safe graph]
+    Private[Private Topology Layer\nPrivate topology superset]
+    Project[Project / WorkScope\nScoped overlays]
+    Local[PlatformDeployment LocalManifest\nTopography overlay]
+    Effective[EffectiveRepoGraph\nConsumed by OperationsCenter]
+
+    Platform --> Private
+    Private --> Project
+    Project --> Local
+    Local --> Effective

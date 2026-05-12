@@ -1,0 +1,21 @@
+graph TD
+    DOC[ProtocolWarden.github.io\nDocumentation + Charter]
+    PM[PlatformManifest\nOntology + Topology + Projection Language]
+    PRM[Private Topology Repository\nPrivate Topology Data]
+    PD[PlatformDeployment\nTopography + Local Deployment]
+    CUST[Custodian\nAudit + Drift Enforcement]
+    OC[OperationsCenter\nRuntime Consumer]
+    WH[Warehouse\nContext Packaging Utility]
+
+    DOC --> PM
+    DOC --> PRM
+    DOC --> PD
+    PM --> PRM
+    PM --> PD
+    PM --> OC
+    PRM --> OC
+    PD --> OC
+    PM --> CUST
+    PRM --> CUST
+    PD --> CUST
+    WH -. tooling only .-> OC
