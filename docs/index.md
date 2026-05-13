@@ -55,6 +55,9 @@ ProtocolWarden is a contract-first platform built around explicit boundaries:
 - `PlatformDeployment` (deployment overlay repo) owns deployment and local
   hosting concerns
 
+For a short operator model, see
+[architecture/simple-platform-model.md](architecture/simple-platform-model.md).
+
 ## Initial Homepage Diagram
 
 ```mermaid

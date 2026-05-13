@@ -13,6 +13,9 @@ This repository is the public knowledge layer for:
 
 It is not a runtime, orchestrator, deployment stack, or execution environment.
 
+For a short operator-facing summary, see
+[docs/architecture/simple-platform-model.md](docs/architecture/simple-platform-model.md).
+
 ## Stack
 
 - MkDocs
