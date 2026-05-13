@@ -3,6 +3,11 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-13 — Add GitHub Actions deploy workflow
+
+- Added `.github/workflows/deploy.yml` — runs `mkdocs gh-deploy --force` on push to main.
+- Without this the site was serving raw files from the repo root, not the rendered MkDocs Material build.
+
 ## 2026-05-13 — Add RepoGraph to Core Repo Constellation diagram
 
 - Added `RG[RepoGraph]` node to the homepage Mermaid diagram with edges `PM --> RG` and `CU --> RG`.
