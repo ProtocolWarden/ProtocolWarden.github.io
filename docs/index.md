@@ -101,10 +101,11 @@ graph LR
     CX[CxRP]
     RX[RxP]
     ER[ExecutorRuntime]
+    RG[RepoGraph]
     PM[PlatformManifest]
     PT[Private truth layer]
     SR[SourceRegistry]
-    WS[PlatformDeployment]
+    PD[PlatformDeployment]
     CU[Custodian]
     WH[Warehouse]
     OC --> OPS
@@ -116,8 +117,9 @@ graph LR
     OPS --> PT
     OPS --> SR
     OPS --> CU
-    OPS --> PT
-    WS --> OPS
+    PM --> RG
+    CU --> RG
+    PD --> OPS
     WH -. utility only .-> OPS
 ```
 
