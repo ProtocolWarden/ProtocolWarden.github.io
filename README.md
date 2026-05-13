@@ -4,47 +4,45 @@ Canonical public-facing documentation surface for the ProtocolWarden ecosystem.
 
 Published site: <https://protocolwarden.github.io/>
 
-This repository is the public knowledge layer for:
+## What This Repo Is
 
-- ecosystem overview
-- architecture explanation
-- protocol and contract documentation
-- ontology and topology guidance
-- governance and boundary doctrine
-- public-safe documentation projections
+- the GitHub Pages documentation repository for the ProtocolWarden ecosystem
+- the public knowledge layer: architecture, protocols, ontology, topology, governance
+- the canonical reference for what is public, what is private, and why
+- a current-only public-safe projection — no archival or private topology
 
-It is not a runtime, orchestrator, deployment stack, or execution environment.
+## What This Repo Is Not
 
-This repository is the GitHub Pages site for the ProtocolWarden ecosystem. The
-GitHub profile README lives in the separate repository
-[`ProtocolWarden`](https://github.com/ProtocolWarden/ProtocolWarden), which is
-the short public front door on `github.com/ProtocolWarden`.
+- a runtime system, orchestrator, or execution environment
+- a deployment stack or backend service
+- a source of private truth or restricted operational material
 
-The site is intentionally current-only. It presents the active public projection
-surface and does not keep archival repo pages or historical catalog entries.
+## Getting Started
 
-For a short operator-facing summary, see
-[docs/architecture/simple-platform-model.md](docs/architecture/simple-platform-model.md).
+Visit <https://protocolwarden.github.io/> to browse the site.
 
-## Stack
-
-- MkDocs
-- Material for MkDocs
-- Markdown-first documentation
-- Mermaid diagrams
-
-## Local development
+For local development:
 
 ```bash
 pip install mkdocs-material
 mkdocs serve
 ```
 
-## Site identity
+The GitHub profile README (short front door) lives in the separate
+[`ProtocolWarden`](https://github.com/ProtocolWarden/ProtocolWarden) repository.
 
-- `ProtocolWarden.github.io`: the published documentation website
-- `ProtocolWarden`: the GitHub profile README repository
-- `ProtocolWarden/ProtocolWarden.github.io`: the repository you are reading now
+## Architecture Overview
+
+The site is built with MkDocs + Material for MkDocs. Content lives in `docs/`.
+Navigation is declared in `mkdocs.yml`. The deploy workflow (`.github/workflows/deploy.yml`)
+runs `mkdocs gh-deploy` on every push to `main`, publishing to the `gh-pages` branch.
+
+```
+docs/               # all documentation source
+mkdocs.yml          # site configuration and navigation
+requirements.txt    # Python dependencies
+.github/workflows/  # deploy workflow
+```
 
 ## Scope
 

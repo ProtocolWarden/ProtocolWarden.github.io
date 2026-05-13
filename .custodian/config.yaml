@@ -14,6 +14,31 @@ audit:
     T7:
       - "docs/**"
 
+doc_conventions:
+  exclude_path_patterns:
+    # Defaults (must re-include when overriding)
+    - "**/archive/**"
+    - "**/history/**"
+    # Section index pages are navigated via the mkdocs.yml nav and tab bar,
+    # not via internal markdown links. Correct for this MkDocs site structure.
+    - docs/index.md
+    - docs/architecture/index.md
+    - docs/audits/index.md
+    - docs/changelog/index.md
+    - docs/contracts/index.md
+    - docs/diagrams/index.md
+    - docs/generated/index.md
+    - docs/getting-started/index.md
+    - docs/glossary/index.md
+    - docs/governance/index.md
+    - docs/observability/index.md
+    - docs/ontology/index.md
+    - docs/overview/index.md
+    - docs/protocols/index.md
+    - docs/repos/index.md
+    - docs/roadmap/index.md
+    - docs/topology/index.md
+
 tools:
   ruff: false
   vulture: false

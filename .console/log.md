@@ -39,3 +39,13 @@ _Where did you leave off? What should be verified next session?_
 _Free-form scratch. Clear periodically — old entries can be deleted once no longer relevant._
 
 ---
+
+## 2026-05-13 — Custodian phase 2 — README, CHANGELOG, DC7, R6 fixes
+
+- README restructured with What this repo is/is not, Getting Started, Architecture sections.
+- CHANGELOG.md added.
+- docs/README.md added (R6 fix).
+- architecture/index.md and audits/index.md updated with full cross-links.
+- protocols/index.md updated with markdown links.
+- .custodian/config.yaml: doc_conventions.exclude_path_patterns added for all section index pages (correct top-level placement, not inside audit:).
+- pre-commit hook added (.hooks/pre-commit).

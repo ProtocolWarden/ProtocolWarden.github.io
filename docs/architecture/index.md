@@ -9,13 +9,17 @@ Start with the [Platform Architecture Charter](platform-architecture-charter.md)
 ## Core Pages
 
 - [Platform Architecture Charter](platform-architecture-charter.md)
-- [Stable Baselines](stable-baselines/repograph-post-pass-hardening-v1.md)
+- [Simple Platform Model](simple-platform-model.md)
 - [Layered Architecture](layered-architecture.md)
+- [Orchestration Model](orchestration-model.md)
 - [Execution Flow](execution-flow.md)
+- [Runtime Binding](runtime-binding.md)
+- [Capability Model](capability-model.md)
+- [Artifact Flow](artifact-flow.md)
+- [Audit Architecture](audit-architecture.md)
+- [Observability Model](observability-model.md)
 - [Topology Model](topology-model.md)
 
-## Diagram Sources
+## Stable Baselines
 
-- [Platform planes](diagrams/platform-planes.mmd)
-- [Manifest layering](diagrams/manifest-layering.mmd)
-- [Projection flow](diagrams/projection-flow.mmd)
+- [RepoGraph Post-PASS Hardening](stable-baselines/repograph-post-pass-hardening-v1.md)

@@ -10,6 +10,8 @@ This section is the public protocol and specification hub.
 
 Related surfaces:
 
-- execution contracts
-- runtime contracts
-- public compatibility guidance
+- [Execution Contracts](execution-contracts.md)
+- [Runtime Contracts](runtime-contracts.md)
+- [PlatformManifest](platformmanifest.md)
+- [CxRP](cxrp.md)
+- [RxP](rxp.md)
