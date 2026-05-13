@@ -105,7 +105,7 @@ nav:
       - PlatformManifest: repos/platformmanifest.md
       - SourceRegistry: repos/sourceregistry.md
       - OperatorConsole: repos/operatorconsole.md
-      - PlatformDeployment (WorkStation): repos/workstation.md
+      - PlatformDeployment (PlatformDeployment): repos/workstation.md
       - Warehouse: repos/warehouse.md
   - Diagrams:
       - Overview: diagrams/index.md

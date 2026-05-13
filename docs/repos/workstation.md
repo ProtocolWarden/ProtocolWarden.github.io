@@ -1,4 +1,4 @@
-# PlatformDeployment (`WorkStation`)
+# PlatformDeployment (`PlatformDeployment`)
 
 ## Mission
 

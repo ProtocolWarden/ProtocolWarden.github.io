@@ -114,7 +114,7 @@ Examples:
 | `RepoGraph` | shared ontology, topology, projection vocabulary, validation primitives, boundary artifact semantics | orchestration behavior, private graph truth, deployment overlays |
 | `PlatformManifest` | public graph instance, loaders, validators, public-safe projection publication | canonical graph semantics, private topology data, local topography, orchestration behavior, CxRP/RxP semantics |
 | `PrivateManifest` | private graph data, private repo identities, visibility metadata, boundary artifact generation | canonical ontology semantics, canonical projection algorithm semantics, local deployment state |
-| `PlatformDeployment` (current repo: `WorkStation`) | local/private topography, runtime placement, env overlays, ports, compose layout | ontology, public topology language, private topology truth, orchestration policy |
+| `PlatformDeployment` (deployment overlay repo) | local/private topography, runtime placement, env overlays, ports, compose layout | ontology, public topology language, private topology truth, orchestration policy |
 | `Custodian` | audit rules, drift checks, projection safety checks, boundary validation, reports | topology truth, projection truth, orchestration behavior, deployment state |
 | `OperationsCenter` | orchestration behavior, task binding, dispatch, runtime consumption of composed manifest truth | canonical ontology, private manifest data, projection policy definitions, local deployment topology |
 | `Warehouse` | code-context packaging utility behavior, kits, crates, pallets, yard mechanics | platform spine semantics, topology truth, registry truth, orchestration, governance |

@@ -39,7 +39,7 @@ Expected source repos for extraction:
 - `SwitchBoard`
 - managed private projects
 - `SourceRegistry`
-- `WorkStation`
+- `PlatformDeployment`
 - `Warehouse`
 
 Expected source materials:

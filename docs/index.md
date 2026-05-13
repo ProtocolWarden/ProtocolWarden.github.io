@@ -48,10 +48,11 @@ ProtocolWarden is a contract-first platform built around explicit boundaries:
 - `OperationsCenter` owns orchestration and governance behavior
 - `SwitchBoard` owns lane and backend selection
 - `ExecutorRuntime` owns runtime invocation mechanics
-- `PlatformManifest` owns the public topology language and visibility model
+- `RepoGraph` owns the shared ontology, topology, projection, and boundary language
+- `PlatformManifest` publishes the public graph instance and public-safe projections
 - a private topology layer supplies private truth in that language
-- `Custodian` owns privacy, hygiene, and drift detection enforcement
-- `PlatformDeployment` (current repo: `WorkStation`) owns deployment and local
+- `Custodian` consumes RepoGraph boundary artifacts and enforces public-surface drift checks
+- `PlatformDeployment` (deployment overlay repo) owns deployment and local
   hosting concerns
 
 ## Initial Homepage Diagram
