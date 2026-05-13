@@ -9,6 +9,7 @@ Start with the [Platform Architecture Charter](platform-architecture-charter.md)
 ## Core Pages
 
 - [Platform Architecture Charter](platform-architecture-charter.md)
+- [Documentation Status](doc-status.md)
 - [Layered Architecture](layered-architecture.md)
 - [Execution Flow](execution-flow.md)
 - [Topology Model](topology-model.md)

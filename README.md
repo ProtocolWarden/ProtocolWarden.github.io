@@ -15,6 +15,8 @@ It is not a runtime, orchestrator, deployment stack, or execution environment.
 
 For a short operator-facing summary, see
 [docs/architecture/simple-platform-model.md](docs/architecture/simple-platform-model.md).
+Current and historical documentation pages are labeled with frontmatter in
+[docs/architecture/doc-status.md](docs/architecture/doc-status.md).
 
 ## Stack
 
