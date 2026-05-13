@@ -22,6 +22,8 @@ catalog entries.
 
 | Repo | Category | Purpose | Public role | Not responsible for | Primary consumers | License | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| ProtocolWarden/ProtocolWarden | profile_front_door | GitHub profile README and org front door | short public orientation and navigation hub | architecture depth, runtime, governance detail | new visitors, external contributors | repo license | active |
+| ProtocolWarden.github.io | knowledge_surface | canonical public architecture charter and documentation site | full documentation, protocol specs, governance reference, public-safe projections | runtime execution, orchestration, deployment | all public ecosystem consumers | repo license | active |
 | RepoGraph | semantic_core | shared graph semantics and boundary schema | canonical graph language | private truth, orchestration, deployment, UI projection | PlatformManifest, Custodian, OperationsCenter | repo license | active |
 | PlatformManifest | topology_projection | public graph projection publisher | public-safe repo graph surface | private truth, orchestration policy, deployment control | docs site, OperationsCenter | repo license | active |
 | CxRP | contract_protocol | execution routing contract models | contract vocabulary for routing | runtime hosting, orchestration policy | OperationsCenter, SwitchBoard, ExecutorRuntime | repo license | active |

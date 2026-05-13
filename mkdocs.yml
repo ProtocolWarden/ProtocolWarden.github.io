@@ -131,9 +131,12 @@ nav:
   - Diagrams:
       - Overview: diagrams/index.md
       - Ecosystem Layered Stack: diagrams/ecosystem/layered-stack.md
+      - Repo Constellation: diagrams/ecosystem/repo-constellation.md
+      - Protocol Stack: diagrams/ecosystem/protocol-stack.md
       - Execution Sequence: diagrams/execution/sequence.md
       - Governance Enforcement: diagrams/governance/enforcement.md
       - Manifest Projection: diagrams/manifests/projection.md
+      - Projection Flow: diagrams/manifests/projection-flow.md
   - Observability:
       - Overview: observability/index.md
       - Audit System: observability/audit-system.md

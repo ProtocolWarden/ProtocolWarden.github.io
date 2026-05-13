@@ -1,29 +1,28 @@
 # ProtocolWarden
 
-ProtocolWarden.github.io is the canonical public-facing knowledge surface for
-the ProtocolWarden ecosystem.
+ProtocolWarden is a contract-first AI operations ecosystem organized around
+semantic repo graphs, execution protocols, policy-controlled routing, runtime
+adapters, and public-safe architecture projection.
 
-It explains:
+---
 
-- what exists
-- why it exists
-- how it connects
-- what boundaries are enforced
-- how contracts interact
-- how execution flows
-- how governance works
-- what is public vs private
+This site is the canonical public knowledge surface for the ecosystem. It
+explains what exists, how it fits together, what boundaries are enforced, and
+what is public versus private.
 
-## What This Site Is
+The short front door is the
+[GitHub profile README](https://github.com/ProtocolWarden/ProtocolWarden).
+The [GitHub org](https://github.com/ProtocolWarden) lists all public repos.
+
+## This Site Is
 
 - the public documentation surface
-- the ecosystem entrypoint
 - the architecture explanation layer
 - the protocol and specification hub
 - the ontology and topology explorer
-- the governance and public-projection layer
+- the governance and boundary reference
 
-## What This Site Is Not
+## This Site Is Not
 
 - a runtime system
 - an orchestration layer
@@ -33,7 +32,8 @@ It explains:
 
 ## Start Here
 
-- [Profile README front door](https://github.com/ProtocolWarden/ProtocolWarden)
+- [Profile README — public front door](https://github.com/ProtocolWarden/ProtocolWarden)
+- [GitHub org](https://github.com/ProtocolWarden)
 - [Getting Started](getting-started/index.md)
 - [Ecosystem Overview](overview/ecosystem.md)
 - [Ecosystem Role Matrix](overview/ecosystem-role-matrix.md)
@@ -42,53 +42,35 @@ It explains:
 - [Repository Catalog](repos/index.md)
 - [Public Repo Catalog Policy](governance/public-repo-catalog.md)
 
-## Operational References
-
-- [RepoGraph Post-PASS Hardening Baseline](architecture/stable-baselines/repograph-post-pass-hardening-v1.md)
-- [Semantic Federation](operations/semantic-federation.md)
-
-## Ecosystem in 60 Seconds
-
-ProtocolWarden is a contract-first platform built around explicit boundaries:
-
-- `CxRP` owns cross-repo execution and routing semantics
-- `RxP` owns runtime invocation semantics
-- `OperationsCenter` owns orchestration and governance behavior
-- `SwitchBoard` owns lane and backend selection
-- `ExecutorRuntime` owns runtime invocation mechanics
-- `RepoGraph` owns the shared ontology, topology, projection, and boundary language
-- `PlatformManifest` publishes the public graph instance and public-safe projections
-- the private-truth layer supplies private graph truth in that language
-- `Custodian` consumes RepoGraph boundary artifacts and enforces public-surface drift checks
-- `PlatformDeployment` (deployment overlay repo) owns deployment and local
-  hosting concerns
-- adjacent backend consumers are runtime and content-pipeline consumers
-
-For a short operator model, see
-[architecture/simple-platform-model.md](architecture/simple-platform-model.md).
-
-## Initial Homepage Diagram
+## Ecosystem Architecture
 
 ```mermaid
 graph TD
-    PKS[Public Knowledge Surface]
-    SITE[ProtocolWarden.github.io]
-    ONT[Ontology]
-    TOP[Topology]
-    GOV[Governance]
-    PROTO[Protocol Layer\nCxRP / RxP / Contracts]
-    CTRL[Control Layer\nOperationsCenter / SwitchBoard]
-    RUN[Runtime Layer\nExecutorRuntime / adjacent backend consumers]
+    subgraph surface ["Public Surface"]
+        DOCS["ProtocolWarden.github.io"]
+    end
+    subgraph semantic ["Semantic / Protocol Layer"]
+        RG[RepoGraph]
+        PM[PlatformManifest]
+        CX[CxRP]
+        RX[RxP]
+    end
+    subgraph control ["Control / Runtime Layer"]
+        OPS[OperationsCenter]
+        SB[SwitchBoard]
+        OC[OperatorConsole]
+        ER[ExecutorRuntime]
+    end
+    subgraph gov ["Governance / Lifecycle Layer"]
+        CU[Custodian]
+        SR[SourceRegistry]
+        PD[PlatformDeployment]
+        WH[Warehouse]
+    end
 
-    PKS --> SITE
-    SITE --> ONT
-    SITE --> TOP
-    SITE --> GOV
-    ONT --> PROTO
-    TOP --> PROTO
-    GOV --> CTRL
-    PROTO --> CTRL
-    CTRL --> RUN
+    surface --> semantic
+    semantic --> control
+    control --> gov
 ```
 
 ## Core Repo Constellation
@@ -123,19 +105,40 @@ graph LR
     WH -. utility only .-> OPS
 ```
 
+## Ecosystem in 60 Seconds
+
+- `CxRP` owns cross-repo execution and routing semantics
+- `RxP` owns runtime invocation semantics
+- `OperationsCenter` owns orchestration and governance behavior
+- `SwitchBoard` owns lane and backend selection
+- `ExecutorRuntime` owns runtime invocation mechanics
+- `RepoGraph` owns the shared ontology, topology, projection, and boundary language
+- `PlatformManifest` publishes the public graph instance and public-safe projections
+- the private-truth layer supplies private graph truth in that language
+- `Custodian` consumes RepoGraph boundary artifacts and enforces public-surface drift checks
+- `PlatformDeployment` owns deployment and local hosting concerns
+- adjacent backend consumers are runtime and content-pipeline consumers
+
+For a short operator model, see
+[architecture/simple-platform-model.md](architecture/simple-platform-model.md).
+
 ## Protocol Stack Summary
 
 - **Contracts:** CxRP, RxP
 - **Control plane:** OperatorConsole, OperationsCenter, SwitchBoard
 - **Runtime layer:** ExecutorRuntime, adjacent backend consumers, managed backends
-- **Inventory and governance:** PlatformManifest, private topology inputs,
-  Custodian, SourceRegistry, PlatformDeployment
+- **Inventory and governance:** PlatformManifest, Custodian, SourceRegistry, PlatformDeployment
 - **Utility tooling:** Warehouse
+
+## Operational References
+
+- [RepoGraph Post-PASS Hardening Baseline](architecture/stable-baselines/repograph-post-pass-hardening-v1.md)
+- [Semantic Federation](operations/semantic-federation.md)
 
 ## Documentation Philosophy
 
 This repository exists to preserve architectural intent and reduce cognitive
-load. The public site should make the ecosystem understandable without forcing
-contributors to reverse-engineer the platform from source alone. For the short
-front door, see the separate
+load. The public site makes the ecosystem understandable without forcing
+contributors to reverse-engineer the platform from source. For the short front
+door, see the separate
 [ProtocolWarden](https://github.com/ProtocolWarden/ProtocolWarden) repository.
