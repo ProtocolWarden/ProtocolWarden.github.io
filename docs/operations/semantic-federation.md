@@ -57,7 +57,7 @@ The public-surface catalog policy is separate from privacy detection:
 
 - `custodian.policy.public_surface_catalog` governs browseable repo pages
 - privacy detectors govern leakage, forbidden names, and boundary validity
-- architecture docs may still name `PrivateManifest` when describing private
+- architecture docs may still name `private-truth layer` when describing private
   truth, but the public catalog may not promote it to a first-class repo page
 
 This workflow is operational glue only. It does not define graph semantics or

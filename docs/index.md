@@ -62,7 +62,7 @@ ProtocolWarden is a contract-first platform built around explicit boundaries:
 - `Custodian` consumes RepoGraph boundary artifacts and enforces public-surface drift checks
 - `PlatformDeployment` (deployment overlay repo) owns deployment and local
   hosting concerns
-- `VideoFoundry` is a public runtime and content-pipeline consumer surface
+- adjacent backend consumers are runtime and content-pipeline consumers
 
 For a short operator model, see
 [architecture/simple-platform-model.md](architecture/simple-platform-model.md).
@@ -78,7 +78,7 @@ graph TD
     GOV[Governance]
     PROTO[Protocol Layer\nCxRP / RxP / Contracts]
     CTRL[Control Layer\nOperationsCenter / SwitchBoard]
-    RUN[Runtime Layer\nExecutorRuntime / VideoFoundry]
+    RUN[Runtime Layer\nExecutorRuntime / adjacent backend consumers]
 
     PKS --> SITE
     SITE --> ONT
@@ -125,7 +125,7 @@ graph LR
 
 - **Contracts:** CxRP, RxP
 - **Control plane:** OperatorConsole, OperationsCenter, SwitchBoard
-- **Runtime layer:** ExecutorRuntime, VideoFoundry, managed backends
+- **Runtime layer:** ExecutorRuntime, adjacent backend consumers, managed backends
 - **Inventory and governance:** PlatformManifest, private topology inputs,
   Custodian, SourceRegistry, PlatformDeployment
 - **Utility tooling:** Warehouse

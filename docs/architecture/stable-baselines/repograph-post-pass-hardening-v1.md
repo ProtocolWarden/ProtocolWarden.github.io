@@ -13,7 +13,7 @@ RepoGraph migration, hardening, stability, and semantic-federation passes.
 ## Baseline guarantees
 
 - RepoGraph remains the canonical graph language and semantic governance owner.
-- PrivateManifest remains the owner of private graph truth and boundary artifact generation.
+- private-truth layer remains the owner of private graph truth and boundary artifact generation.
 - PlatformManifest remains the public graph projection publisher.
 - Custodian remains fail-closed and consumes boundary artifacts only.
 - OperationsCenter remains an orchestration consumer of composed graph truth.

@@ -8,7 +8,7 @@ superseded_by: null
 # Simple Platform Model
 
 RepoGraph defines the language.
-PrivateManifest stores private truth.
+private-truth layer stores private truth.
 PlatformManifest publishes safe public views.
 Custodian verifies boundaries.
 OperationsCenter orchestrates.
@@ -22,7 +22,7 @@ ProtocolWarden.github.io is the full public knowledge surface.
 ```mermaid
 graph LR
     RG[RepoGraph] --> PM[PlatformManifest]
-    RG --> PRM[PrivateManifest]
+    RG --> PRM[private-truth layer]
     PRM --> CUST[Custodian]
     PM --> OC[OperationsCenter]
     PD[PlatformDeployment] --> OC
@@ -33,7 +33,7 @@ graph LR
 
 ```mermaid
 graph LR
-    PRM[PrivateManifest] --> ART[Boundary artifact file]
+    PRM[private-truth layer] --> ART[Boundary artifact file]
     ART --> CUST[Custodian]
     CUST --> REP[Verification report]
 ```
@@ -42,7 +42,7 @@ graph LR
 
 ```mermaid
 graph LR
-    PRM[PrivateManifest graph truth] --> RG[RepoGraph projection profile]
+    PRM[private-truth layer graph truth] --> RG[RepoGraph projection profile]
     RG --> PUB[Public-safe projection]
     RG --> AUD[Audit/internal projection]
 ```

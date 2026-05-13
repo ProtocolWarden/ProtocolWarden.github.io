@@ -24,7 +24,7 @@ Canonical shared graph-semantics library for the ProtocolWarden platform.
 - none for canonical semantics
 - `Custodian` for enforcement
 - `PlatformManifest` for public projection publication
-- `PrivateManifest` for private truth export
+- `private-truth layer` for private truth export
 
 ## Related pages
 

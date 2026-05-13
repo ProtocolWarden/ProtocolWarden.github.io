@@ -120,7 +120,6 @@ nav:
       - ExecutorRuntime: repos/executorruntime.md
       - Custodian: repos/custodian.md
       - PlatformManifest: repos/platformmanifest.md
-      - VideoFoundry: repos/videofoundry.md
       - SourceRegistry: repos/sourceregistry.md
       - OperatorConsole: repos/operatorconsole.md
       - PlatformDeployment: repos/platformdeployment.md

@@ -10,7 +10,7 @@ catalog entries.
 
 ## Policy
 
-- Architecture and charter pages may name `PrivateManifest` when they describe
+- Architecture and charter pages may name `private-truth layer` when they describe
   the private-truth boundary.
 - The public repo catalog itself is limited to approved public pages.
 - This policy does not replace privacy detectors; it complements them.
@@ -34,7 +34,6 @@ catalog entries.
 | PlatformDeployment | deployment_runtime | local/CI runtime glue | environment assembly and wrapper layer | graph semantics, orchestration policy | Custodian, OperationsCenter | repo license | active |
 | SourceRegistry | source_lifecycle | source and fork tracking | source inventory and lifecycle | graph semantics, orchestration policy | OperationsCenter, Custodian | repo license | active |
 | Warehouse | context_staging | LLM-ready context packaging | utility-only packaging/staging | graph authority, orchestration, governance | operators, assistant workflows | repo license | active |
-| VideoFoundry | backend_candidate | content pipeline consumer | adjacent runtime/backend surface | graph semantics, orchestration authority | docs site, OperationsCenter | repo license | active |
 
 ## Related pages
 

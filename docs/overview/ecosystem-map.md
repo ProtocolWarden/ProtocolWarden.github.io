@@ -17,7 +17,6 @@ graph TD
     WS[PlatformDeployment]
     SR[SourceRegistry]
     WH[Warehouse]
-    VF[VideoFoundry]
 
     FRONT --> DOCS
     DOCS --> PM
@@ -36,6 +35,5 @@ graph TD
     OPS --> PM
     OPS --> CX
     OPS --> RX
-    OPS --> VF
     WS --> OPS
 ```

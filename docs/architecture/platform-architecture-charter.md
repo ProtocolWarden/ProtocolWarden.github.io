@@ -19,7 +19,7 @@ The manifest repositories and enforcement tools implement that doctrine:
 ProtocolWarden.github.io   = architecture charter, doctrine, public explanation
 RepoGraph                  = shared graph semantics library
 PlatformManifest           = public graph instance / public projection publisher
-PrivateManifest            = private graph instance / private superset truth
+private-truth layer            = private graph instance / private superset truth
 PlatformDeployment         = local/private deployment topography
 Custodian                  = boundary artifact consumer and drift enforcement
 OperationsCenter           = runtime consumer of composed graph truth
@@ -119,7 +119,7 @@ Examples:
 | `ProtocolWarden.github.io` | public charter, public diagrams, doctrine | executable manifest semantics, private topology data, local deployment state |
 | `RepoGraph` | shared ontology, topology, projection vocabulary, validation primitives, boundary artifact semantics | orchestration behavior, private graph truth, deployment overlays |
 | `PlatformManifest` | public graph instance, loaders, validators, public-safe projection publication | canonical graph semantics, private topology data, local topography, orchestration behavior, CxRP/RxP semantics |
-| `PrivateManifest` | private graph data, private repo identities, visibility metadata, boundary artifact generation | canonical ontology semantics, canonical projection algorithm semantics, local deployment state |
+| `private-truth layer` | private graph data, private repo identities, visibility metadata, boundary artifact generation | canonical ontology semantics, canonical projection algorithm semantics, local deployment state |
 | `PlatformDeployment` (deployment overlay repo) | local/private topography, runtime placement, env overlays, ports, compose layout | ontology, public topology language, private topology truth, orchestration policy |
 | `Custodian` | audit rules, drift checks, projection safety checks, boundary validation, reports | topology truth, projection truth, orchestration behavior, deployment state |
 | `OperationsCenter` | orchestration behavior, task binding, dispatch, runtime consumption of composed manifest truth | canonical ontology, private manifest data, projection policy definitions, local deployment topology |
@@ -134,7 +134,7 @@ RepoGraph
 PlatformManifest
     = public graph instance and public-safe publisher
 
-PrivateManifest
+private-truth layer
     = private graph superset expressed with RepoGraph semantics
 
 Project / WorkScope manifests
@@ -169,7 +169,7 @@ debugging workflows. It must not be modeled as:
 ProtocolWarden.github.io documents everything
 
 RepoGraph defines the language
-PlatformManifest and PrivateManifest import that language
+PlatformManifest and private-truth layer import that language
 PlatformDeployment uses composed output for local deployment/topography
 OperationsCenter consumes composed truth for orchestration
 Custodian consumes RepoGraph-derived boundary artifacts and verifies drift
@@ -177,7 +177,7 @@ Custodian consumes RepoGraph-derived boundary artifacts and verifies drift
 
 Avoid circular authority:
 
-- `PrivateManifest` and other private-truth repositories must not define platform language
+- `private-truth layer` and other private-truth repositories must not define platform language
 - `PlatformDeployment` must not define platform language
 - `OperationsCenter` must not define platform language
 - `Warehouse` must not define platform language
@@ -189,7 +189,7 @@ Avoid circular authority:
 The charter states what must be true.
 RepoGraph encodes the shared graph language.
 PlatformManifest publishes the public graph instance.
-PrivateManifest declares private truth in that language and derives boundary artifacts.
+private-truth layer declares private truth in that language and derives boundary artifacts.
 PlatformDeployment declares local deployment/topography overlays.
 Custodian verifies that declarations, generated projections, and boundary artifacts do not drift from the rules.
 OperationsCenter consumes composed manifest truth at runtime.
@@ -204,7 +204,7 @@ graph TD
     DOC[ProtocolWarden.github.io\nDocumentation + Charter]
     RG[RepoGraph\nOntology + Topology + Projection Semantics]
     PM[PlatformManifest\nPublic Graph Instance]
-    PRM[PrivateManifest\nPrivate Graph Data]
+    PRM[private-truth layer\nPrivate Graph Data]
     PD[PlatformDeployment\nTopography + Local Deployment]
     CUST[Custodian\nAudit + Drift Enforcement]
     OC[OperationsCenter\nRuntime Consumer]
@@ -232,7 +232,7 @@ graph TD
 graph TD
     Semantics[RepoGraph\nShared semantics]
     Platform[PlatformManifest\nPublic graph instance]
-    Private[PrivateManifest\nPrivate graph superset]
+    Private[private-truth layer\nPrivate graph superset]
     Project[Project / WorkScope\nScoped overlays]
     Local[PlatformDeployment LocalManifest\nTopography overlay]
     Effective[EffectiveRepoGraph\nConsumed by OperationsCenter]
@@ -249,7 +249,7 @@ graph TD
 
 ```mermaid
 graph LR
-    PrivateTruth[PrivateManifest truth]
+    PrivateTruth[private-truth layer truth]
     ProjectionRules[RepoGraph projection rules]
     PublicSafe[PlatformManifest public projection]
     Boundary[RepoGraph boundary artifact]

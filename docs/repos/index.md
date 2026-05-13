@@ -19,7 +19,6 @@ does not do.
 | [PlatformDeployment](platformdeployment.md) | deployment_runtime | runtime glue and local/CI ergonomics |
 | [SourceRegistry](sourceregistry.md) | source_lifecycle | source and fork inventory |
 | [Warehouse](warehouse.md) | context_staging | LLM-ready packaging and staging |
-| [VideoFoundry](videofoundry.md) | backend_candidate | runtime and content-pipeline consumer surface |
 
 ## Adjacent surfaces
 
@@ -29,9 +28,9 @@ does not do.
 
 ## Boundary note
 
-`PrivateManifest` is intentionally not a browseable repo page in the public
-catalog. The architecture charter and boundary workflow docs name it where the
-private-truth boundary must be explained.
+Private-truth repos are not normal browsable repo pages. The architecture
+charter and boundary workflow docs explain the boundary without promoting those
+repos into first-class catalog entries.
 
 ## Related pages
 

@@ -39,7 +39,6 @@ without collapsing all semantics into one repository.
 - OperationsCenter
 - SwitchBoard
 - ExecutorRuntime
-- VideoFoundry
 
 ### Platform Inventory and Governance
 
@@ -50,8 +49,7 @@ without collapsing all semantics into one repository.
 
 ### Private Truth Boundary
 
-- private-truth layer
-- PrivateManifest
+- private-truth repositories
 
 ### Managed Projects and Capability Providers
 

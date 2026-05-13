@@ -6,7 +6,7 @@ verification.
 ```mermaid
 flowchart LR
     RG[RepoGraph] -->|shared semantics| PM[PlatformManifest]
-    PRM[PrivateManifest] -->|private truth + export| BA[Boundary artifact]
+    PRM[private-truth layer] -->|private truth + export| BA[Boundary artifact]
     PM -->|public-safe projection| BA
     BA --> CU[Custodian]
     CU --> OC[OperationsCenter]
@@ -17,7 +17,7 @@ flowchart LR
 ## Core flow
 
 1. `RepoGraph` defines the shared graph language.
-2. `PrivateManifest` owns private truth and exports the boundary artifact.
+2. `private-truth layer` owns private truth and exports the boundary artifact.
 3. `PlatformManifest` publishes the public-safe projection surface.
 4. `Custodian` validates the boundary artifact before scanning public repos.
 5. `OperationsCenter`, `OperatorConsole`, and `SwitchBoard` consume verified

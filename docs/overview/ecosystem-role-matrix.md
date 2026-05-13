@@ -11,7 +11,7 @@ This matrix is the fast answer to “what owns what?” for the public ecosystem
 | Control Plane Layer | planning and orchestration consumer | `OperationsCenter` |
 | Routing Policy Layer | lane and backend selection | `SwitchBoard` |
 | Operator Entry Layer | operator workspace and command surface | `OperatorConsole` |
-| Runtime Execution Layer | invocation mechanics and adapters | `ExecutorRuntime`, `VideoFoundry` |
+| Runtime Execution Layer | invocation mechanics and adapters | `ExecutorRuntime`, backend consumers |
 | Governance / Audit Layer | boundary, drift, and catalog enforcement | `Custodian` |
 | Deployment / Local Runtime Layer | environment assembly and convenience wrappers | `PlatformDeployment` |
 | Source Lifecycle Layer | source and fork inventory | `SourceRegistry` |
@@ -20,7 +20,6 @@ This matrix is the fast answer to “what owns what?” for the public ecosystem
 
 ## Boundary reminder
 
-- `PrivateManifest` is private-truth documentation and boundary source, not a
-  browseable public catalog entry.
+- private-truth repositories are documentation and boundary sources, not
+  browseable public catalog entries.
 - The public site explains it where the boundary needs to be understood.
-

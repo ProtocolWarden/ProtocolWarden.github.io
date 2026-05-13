@@ -16,7 +16,6 @@ graph TD
     WS[PlatformDeployment]
     WH[Warehouse]
     SR[SourceRegistry]
-    VF[VideoFoundry]
     DOCS[ProtocolWarden.github.io]
 
     FRONT --> DOCS
@@ -33,7 +32,6 @@ graph TD
     OPS --> PT
     OPS --> SR
     OPS --> CU
-    OPS --> VF
     WS --> OPS
     WH --> OPS
 ```
