@@ -2,7 +2,9 @@
 
 ```mermaid
 graph TD
+    FRONT[ProtocolWarden/ProtocolWarden]
     DOCS[ProtocolWarden.github.io]
+    RG[RepoGraph]
     PM[PlatformManifest]
     PT[Private truth layer]
     OC[OperatorConsole]
@@ -15,8 +17,11 @@ graph TD
     WS[PlatformDeployment]
     SR[SourceRegistry]
     WH[Warehouse]
+    VF[VideoFoundry]
 
+    FRONT --> DOCS
     DOCS --> PM
+    DOCS --> RG
     DOCS --> CX
     DOCS --> RX
     DOCS --> OPS
@@ -31,5 +36,6 @@ graph TD
     OPS --> PM
     OPS --> CX
     OPS --> RX
+    OPS --> VF
     WS --> OPS
 ```

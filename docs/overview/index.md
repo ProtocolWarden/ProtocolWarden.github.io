@@ -6,6 +6,7 @@ you dive into contracts, architecture, or topology.
 ## Start here
 
 - [Ecosystem](ecosystem.md)
+- [Ecosystem Role Matrix](ecosystem-role-matrix.md)
 - [Design Philosophy](design-philosophy.md)
 - [Public vs Private](public-vs-private.md)
 - [Architecture Principles](architecture-principles.md)
@@ -24,4 +25,5 @@ you dive into contracts, architecture, or topology.
 
 - [Repository Catalog](../repos/index.md)
 - [Ontology: Ontology vs Topology vs Topography](../ontology/ontology-vs-topology-vs-topography.md)
+- [Profile README vs Pages Site](../governance/profile-readme-vs-pages-site.md)
 - [Simple Platform Model](../architecture/simple-platform-model.md)

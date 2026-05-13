@@ -5,6 +5,8 @@ Topology explains how the ecosystem is connected.
 ## Pages
 
 - [Ecosystem Graph](ecosystem-graph.md)
+- [RepoGraph Boundary](repograph-boundary.md)
+- [Semantic Boundary Workflow](semantic-boundary-workflow.md)
 - [Repo Dependencies](repo-dependencies.md)
 - [Execution Routing](execution-routing.md)
 - [Service Relationships](service-relationships.md)

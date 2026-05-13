@@ -21,30 +21,43 @@ without collapsing all semantics into one repository.
 
 ## Main Layers
 
+### Public Surface
+
+- [ProtocolWarden/ProtocolWarden](https://github.com/ProtocolWarden/ProtocolWarden)
+- [ProtocolWarden.github.io](https://protocolwarden.github.io/)
+
+### Semantic Core
+
+- RepoGraph
+- PlatformManifest
+- CxRP
+- RxP
+
 ### Control Plane
 
 - OperatorConsole
 - OperationsCenter
 - SwitchBoard
-- CxRP
-- RxP
 - ExecutorRuntime
+- VideoFoundry
 
 ### Platform Inventory and Governance
 
-- PlatformManifest
-- private-truth layer
+- Custodian
 - SourceRegistry
 - PlatformDeployment
-- Custodian
 - Warehouse
-- ProtocolWarden.github.io
+
+### Private Truth Boundary
+
+- private-truth layer
+- PrivateManifest
 
 ### Managed Projects and Capability Providers
 
 - managed private projects
-- SourceFoundry
 - backend and tool integrations
+- external integrations and forked dependencies
 
 ## Why the Repo Split Exists
 
@@ -56,6 +69,7 @@ The split is deliberate:
 - topology and visibility remain canonical in manifest repos
 - public documentation remains canonical in this repo
 - managed projects remain consumers of the published ecosystem, not owners of it
+- RepoGraph remains the shared semantic substrate
 
 That separation reduces schema duplication, ownership drift, and god-repo
 behavior.

@@ -14,6 +14,8 @@ Custodian verifies boundaries.
 OperationsCenter orchestrates.
 PlatformDeployment deploys.
 Warehouse packages context.
+ProtocolWarden/ProtocolWarden is the short public front door.
+ProtocolWarden.github.io is the full public knowledge surface.
 
 ## Flow
 

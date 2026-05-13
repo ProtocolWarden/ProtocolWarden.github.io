@@ -2,6 +2,9 @@
 
 Use this section when you need a fast orientation path through the ecosystem.
 
+If you want the short front door first, start with the
+[ProtocolWarden profile README repository](https://github.com/ProtocolWarden/ProtocolWarden).
+
 ## If You Are New
 
 Read these in order:

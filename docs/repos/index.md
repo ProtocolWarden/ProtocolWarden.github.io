@@ -3,30 +3,35 @@
 This catalog explains what each major repo does and, more importantly, what it
 does not do.
 
-## Canonical repos
+## Core platform repos
 
-| Repo | Role | Notes |
+| Repo | Category | Role |
 | --- | --- | --- |
-| [OperationsCenter](operationscenter.md) | orchestration consumer | consumes composed graph truth, does not own graph semantics |
-| [OperatorConsole](operatorconsole.md) | operator-facing control surface | local operator workflows and observability, not graph semantics |
-| [PlatformManifest](platformmanifest.md) | public graph publisher | public-safe projection surface backed by RepoGraph |
-| [Custodian](custodian.md) | boundary verifier | fail-closed drift and boundary enforcement |
-| [CxRP](cxrp.md) | cross-repo protocol | contract surface for execution and routing |
-| [RxP](rxp.md) | runtime protocol | runtime invocation semantics |
-| [ExecutorRuntime](executorruntime.md) | runtime mechanics | execution mechanics and adapters |
-| [SwitchBoard](switchboard.md) | lane selection | routing and backend selection |
-| [SourceRegistry](sourceregistry.md) | source inventory | source and capability registry |
-| [PlatformDeployment](platformdeployment.md) | deployment/topography overlay | runtime glue and local/CI ergonomics |
-| [Warehouse](warehouse.md) | context packaging utility | packaging and staging only |
+| [RepoGraph](repograph.md) | semantic_core | shared graph language, schema governance, projection semantics, boundary artifact semantics |
+| [PlatformManifest](platformmanifest.md) | topology_projection | public-safe graph publisher and projection surface |
+| [CxRP](cxrp.md) | contract_protocol | contract execution routing semantics |
+| [RxP](rxp.md) | contract_protocol | runtime execution semantics |
+| [OperationsCenter](operationscenter.md) | control_plane | orchestration consumer and execution coordinator |
+| [SwitchBoard](switchboard.md) | routing_policy | lane and backend selection |
+| [OperatorConsole](operatorconsole.md) | operator_entrypoint | operator-facing control surface |
+| [ExecutorRuntime](executorruntime.md) | runtime_execution | runtime invocation mechanics and adapters |
+| [Custodian](custodian.md) | governance_audit | boundary, drift, and semantic federation verifier |
+| [PlatformDeployment](platformdeployment.md) | deployment_runtime | runtime glue and local/CI ergonomics |
+| [SourceRegistry](sourceregistry.md) | source_lifecycle | source and fork inventory |
+| [Warehouse](warehouse.md) | context_staging | LLM-ready packaging and staging |
+| [VideoFoundry](videofoundry.md) | backend_candidate | runtime and content-pipeline consumer surface |
 
-## Managed projects
+## Adjacent surfaces
 
-The public site does not catalog private-truth repos as normal browsable repo
-pages. Managed projects are described at the ecosystem level instead of being
-listed as first-class catalog entries here.
+| Repo | Category | Notes |
+| --- | --- | --- |
+| [External Integrations](external-integrations.md) | integration_surface | forks, adapters, and backend candidates documented separately |
 
-The public repo catalog is curated by the governance policy described in
-[Public Repository Catalog](../governance/public-repo-catalog.md).
+## Boundary note
+
+`PrivateManifest` is intentionally not a browseable repo page in the public
+catalog. The architecture charter and boundary workflow docs name it where the
+private-truth boundary must be explained.
 
 ## Related pages
 
@@ -34,3 +39,4 @@ The public repo catalog is curated by the governance policy described in
 - [Architecture Charter](../architecture/platform-architecture-charter.md)
 - [Ontology](../ontology/index.md)
 - [Topology](../topology/ecosystem-graph.md)
+- [Public Repository Catalog Policy](../governance/public-repo-catalog.md)

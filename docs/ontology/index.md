@@ -5,6 +5,7 @@ Ontology is the shared vocabulary layer for the ProtocolWarden ecosystem.
 ## Pages
 
 - [Ontology vs Topology vs Topography](ontology-vs-topology-vs-topography.md)
+- [Graph Semantics](graph-semantics.md)
 - [Entities](entities.md)
 - [Vocabulary](vocabulary.md)
 - [Execution Objects](execution-objects.md)

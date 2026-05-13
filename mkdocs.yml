@@ -48,6 +48,7 @@ nav:
   - Overview:
       - Overview: overview/index.md
       - Ecosystem: overview/ecosystem.md
+      - Ecosystem Role Matrix: overview/ecosystem-role-matrix.md
       - Design Philosophy: overview/design-philosophy.md
       - Public vs Private: overview/public-vs-private.md
       - Architecture Principles: overview/architecture-principles.md
@@ -71,6 +72,7 @@ nav:
   - Ontology:
       - Overview: ontology/index.md
       - Ontology vs Topology vs Topography: ontology/ontology-vs-topology-vs-topography.md
+      - Graph Semantics: ontology/graph-semantics.md
       - Entities: ontology/entities.md
       - Vocabulary: ontology/vocabulary.md
       - Execution Objects: ontology/execution-objects.md
@@ -80,6 +82,8 @@ nav:
   - Topology:
       - Overview: topology/index.md
       - Ecosystem Graph: topology/ecosystem-graph.md
+      - RepoGraph Boundary: topology/repograph-boundary.md
+      - Semantic Boundary Workflow: topology/semantic-boundary-workflow.md
       - Repo Dependencies: topology/repo-dependencies.md
       - Execution Routing: topology/execution-routing.md
       - Service Relationships: topology/service-relationships.md
@@ -92,6 +96,8 @@ nav:
       - Boundary Enforcement: governance/boundary-enforcement.md
       - Schema Evolution: governance/schema-evolution.md
       - Public Repository Catalog: governance/public-repo-catalog.md
+      - Profile README vs Pages Site: governance/profile-readme-vs-pages-site.md
+      - External Integrations: governance/external-integrations.md
       - Capability Governance: governance/capability-governance.md
       - Runtime Governance: governance/runtime-governance.md
       - Drift Detection: governance/drift-detection.md
@@ -106,6 +112,7 @@ nav:
       - Overview: contracts/index.md
   - Repos:
       - Overview: repos/index.md
+      - RepoGraph: repos/repograph.md
       - OperationsCenter: repos/operationscenter.md
       - SwitchBoard: repos/switchboard.md
       - CxRP: repos/cxrp.md
@@ -113,10 +120,12 @@ nav:
       - ExecutorRuntime: repos/executorruntime.md
       - Custodian: repos/custodian.md
       - PlatformManifest: repos/platformmanifest.md
+      - VideoFoundry: repos/videofoundry.md
       - SourceRegistry: repos/sourceregistry.md
       - OperatorConsole: repos/operatorconsole.md
       - PlatformDeployment: repos/platformdeployment.md
       - Warehouse: repos/warehouse.md
+      - External Integrations: repos/external-integrations.md
   - Diagrams:
       - Overview: diagrams/index.md
       - Ecosystem Layered Stack: diagrams/ecosystem/layered-stack.md

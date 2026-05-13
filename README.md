@@ -15,9 +15,10 @@ This repository is the public knowledge layer for:
 
 It is not a runtime, orchestrator, deployment stack, or execution environment.
 
-This repository is the GitHub Pages site for the ProtocolWarden ecosystem. It is
-not the GitHub profile README repository. The profile README lives in a separate
-repository named `ProtocolWarden`.
+This repository is the GitHub Pages site for the ProtocolWarden ecosystem. The
+GitHub profile README lives in the separate repository
+[`ProtocolWarden`](https://github.com/ProtocolWarden/ProtocolWarden), which is
+the short public front door on `github.com/ProtocolWarden`.
 
 The site is intentionally current-only. It presents the active public projection
 surface and does not keep archival repo pages or historical catalog entries.

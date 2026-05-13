@@ -33,11 +33,14 @@ It explains:
 
 ## Start Here
 
+- [Profile README front door](https://github.com/ProtocolWarden/ProtocolWarden)
 - [Getting Started](getting-started/index.md)
 - [Ecosystem Overview](overview/ecosystem.md)
+- [Ecosystem Role Matrix](overview/ecosystem-role-matrix.md)
 - [Layered Architecture](architecture/layered-architecture.md)
 - [Protocol Overview](protocols/index.md)
 - [Repository Catalog](repos/index.md)
+- [Public Repo Catalog Policy](governance/public-repo-catalog.md)
 
 ## Operational References
 
@@ -59,6 +62,7 @@ ProtocolWarden is a contract-first platform built around explicit boundaries:
 - `Custodian` consumes RepoGraph boundary artifacts and enforces public-surface drift checks
 - `PlatformDeployment` (deployment overlay repo) owns deployment and local
   hosting concerns
+- `VideoFoundry` is a public runtime and content-pipeline consumer surface
 
 For a short operator model, see
 [architecture/simple-platform-model.md](architecture/simple-platform-model.md).
@@ -74,7 +78,7 @@ graph TD
     GOV[Governance]
     PROTO[Protocol Layer\nCxRP / RxP / Contracts]
     CTRL[Control Layer\nOperationsCenter / SwitchBoard]
-    RUN[Runtime Layer\nManaged Projects / ExecutorRuntime]
+    RUN[Runtime Layer\nExecutorRuntime / VideoFoundry]
 
     PKS --> SITE
     SITE --> ONT
@@ -121,7 +125,7 @@ graph LR
 
 - **Contracts:** CxRP, RxP
 - **Control plane:** OperatorConsole, OperationsCenter, SwitchBoard
-- **Runtime layer:** ExecutorRuntime, managed backends, managed projects
+- **Runtime layer:** ExecutorRuntime, VideoFoundry, managed backends
 - **Inventory and governance:** PlatformManifest, private topology inputs,
   Custodian, SourceRegistry, PlatformDeployment
 - **Utility tooling:** Warehouse
@@ -130,4 +134,6 @@ graph LR
 
 This repository exists to preserve architectural intent and reduce cognitive
 load. The public site should make the ecosystem understandable without forcing
-contributors to reverse-engineer the platform from source alone.
+contributors to reverse-engineer the platform from source alone. For the short
+front door, see the separate
+[ProtocolWarden](https://github.com/ProtocolWarden/ProtocolWarden) repository.

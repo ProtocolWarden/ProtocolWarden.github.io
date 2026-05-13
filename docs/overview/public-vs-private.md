@@ -35,3 +35,7 @@ private truth, and Custodian verifies public surfaces against those artifacts.
 
 The public site is current-only. It does not catalog private-truth repos as
 first-class browseable pages.
+
+The short public front door lives in the separate
+[ProtocolWarden](https://github.com/ProtocolWarden/ProtocolWarden) profile
+README repository. The full public knowledge surface lives here.

@@ -5,6 +5,10 @@ ProtocolWarden ecosystem. It explains what planes exist, what each plane owns,
 what each plane must not own, and how the public, private, and local manifest
 layers fit together.
 
+The short public front door lives in the separate
+[`ProtocolWarden`](https://github.com/ProtocolWarden/ProtocolWarden)
+repository. This charter is the longer public knowledge surface.
+
 ## Charter vs Manifest
 
 The charter is doctrine. It states what must be true.
