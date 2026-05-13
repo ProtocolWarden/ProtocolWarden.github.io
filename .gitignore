@@ -1,4 +1,19 @@
+# Build artifacts
 site/
 .cache/
 .venv/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# OS / editor noise
 .DS_Store
+.vscode/
+.idea/
