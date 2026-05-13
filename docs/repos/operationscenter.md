@@ -2,22 +2,26 @@
 
 ## Mission
 
-Planning, orchestration, policy enforcement, and evidence retention for the
-control plane.
+Orchestration and runtime coordination for the ProtocolWarden control plane.
 
 ## This Repo Is
 
-- orchestration and governance implementation
-- planning and routing consumer of RepoGraph-backed manifests
+- orchestration consumer
+- runtime dispatch owner
 - execution coordinator
-- evidence and observability owner
+- consumer of RepoGraph-backed manifests and boundary artifacts
+- evidence and observability integration surface
 
 ## This Repo Is Not
 
 - canonical protocol owner
 - canonical graph vocabulary owner
+- canonical semantic vocabulary owner
 - deployment owner
 - runtime-hosting layer
+- graph semantics authority
+- projection semantics owner
+- topology language owner
 
 ## Depends On
 
@@ -26,6 +30,6 @@ control plane.
 - SwitchBoard
 - ExecutorRuntime
 - PlatformManifest
-- PrivateManifest
-- RepoGraph-backed private/public inputs
+- private-truth layer
+- RepoGraph-backed public and private inputs
 - Custodian

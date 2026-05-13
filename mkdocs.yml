@@ -46,6 +46,7 @@ nav:
   - Getting Started:
       - getting-started/index.md
   - Overview:
+      - Overview: overview/index.md
       - Ecosystem: overview/ecosystem.md
       - Design Philosophy: overview/design-philosophy.md
       - Public vs Private: overview/public-vs-private.md
@@ -56,6 +57,7 @@ nav:
       - Overview: architecture/index.md
       - Platform Architecture Charter: architecture/platform-architecture-charter.md
       - Layered Architecture: architecture/layered-architecture.md
+      - Simple Platform Model: architecture/simple-platform-model.md
       - Orchestration Model: architecture/orchestration-model.md
       - Execution Flow: architecture/execution-flow.md
       - Runtime Binding: architecture/runtime-binding.md
@@ -64,7 +66,11 @@ nav:
       - Artifact Flow: architecture/artifact-flow.md
       - Observability Model: architecture/observability-model.md
       - Topology Model: architecture/topology-model.md
+      - Stable Baselines:
+          - RepoGraph Post-PASS Hardening: architecture/stable-baselines/repograph-post-pass-hardening-v1.md
   - Ontology:
+      - Overview: ontology/index.md
+      - Ontology vs Topology vs Topography: ontology/ontology-vs-topology-vs-topography.md
       - Entities: ontology/entities.md
       - Vocabulary: ontology/vocabulary.md
       - Execution Objects: ontology/execution-objects.md
@@ -72,6 +78,7 @@ nav:
       - Audit Objects: ontology/audit-objects.md
       - Glossary Index: ontology/glossary-index.md
   - Topology:
+      - Overview: topology/index.md
       - Ecosystem Graph: topology/ecosystem-graph.md
       - Repo Dependencies: topology/repo-dependencies.md
       - Execution Routing: topology/execution-routing.md
@@ -79,10 +86,12 @@ nav:
       - Artifact Flow: topology/artifact-flow.md
       - Control Plane: topology/control-plane.md
   - Governance:
+      - Overview: governance/index.md
       - Architectural Invariants: governance/architectural-invariants.md
       - Audit Policy: governance/audit-policy.md
       - Boundary Enforcement: governance/boundary-enforcement.md
       - Schema Evolution: governance/schema-evolution.md
+      - Public Repository Catalog: governance/public-repo-catalog.md
       - Capability Governance: governance/capability-governance.md
       - Runtime Governance: governance/runtime-governance.md
       - Drift Detection: governance/drift-detection.md
@@ -96,6 +105,7 @@ nav:
   - Contracts:
       - Overview: contracts/index.md
   - Repos:
+      - Overview: repos/index.md
       - OperationsCenter: repos/operationscenter.md
       - SwitchBoard: repos/switchboard.md
       - CxRP: repos/cxrp.md
@@ -105,7 +115,7 @@ nav:
       - PlatformManifest: repos/platformmanifest.md
       - SourceRegistry: repos/sourceregistry.md
       - OperatorConsole: repos/operatorconsole.md
-      - PlatformDeployment (PlatformDeployment): repos/workstation.md
+      - PlatformDeployment: repos/platformdeployment.md
       - Warehouse: repos/warehouse.md
   - Diagrams:
       - Overview: diagrams/index.md
@@ -114,6 +124,7 @@ nav:
       - Governance Enforcement: diagrams/governance/enforcement.md
       - Manifest Projection: diagrams/manifests/projection.md
   - Observability:
+      - Overview: observability/index.md
       - Audit System: observability/audit-system.md
       - Representative Runs: observability/representative-runs.md
       - Drift Analysis: observability/drift-analysis.md
@@ -131,3 +142,5 @@ nav:
       - Slice 01 - Canonical Docs Consolidation: roadmap/slice-01-canonical-docs-consolidation.md
   - Generated:
       - generated/index.md
+  - Operations:
+      - Semantic Federation: operations/semantic-federation.md

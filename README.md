@@ -2,6 +2,8 @@
 
 Canonical public-facing documentation surface for the ProtocolWarden ecosystem.
 
+Published site: <https://protocolwarden.github.io/>
+
 This repository is the public knowledge layer for:
 
 - ecosystem overview
@@ -13,10 +15,15 @@ This repository is the public knowledge layer for:
 
 It is not a runtime, orchestrator, deployment stack, or execution environment.
 
+This repository is the GitHub Pages site for the ProtocolWarden ecosystem. It is
+not the GitHub profile README repository. The profile README lives in a separate
+repository named `ProtocolWarden`.
+
+The site is intentionally current-only. It presents the active public projection
+surface and does not keep archival repo pages or historical catalog entries.
+
 For a short operator-facing summary, see
 [docs/architecture/simple-platform-model.md](docs/architecture/simple-platform-model.md).
-Current and historical documentation pages are labeled with frontmatter in
-[docs/architecture/doc-status.md](docs/architecture/doc-status.md).
 
 ## Stack
 
@@ -31,6 +38,12 @@ Current and historical documentation pages are labeled with frontmatter in
 pip install mkdocs-material
 mkdocs serve
 ```
+
+## Site identity
+
+- `ProtocolWarden.github.io`: the published documentation website
+- `ProtocolWarden`: the GitHub profile README repository
+- `ProtocolWarden/ProtocolWarden.github.io`: the repository you are reading now
 
 ## Scope
 

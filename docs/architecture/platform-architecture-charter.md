@@ -22,6 +22,8 @@ OperationsCenter           = runtime consumer of composed graph truth
 ```
 
 The charter is not the execution engine and it is not the schema authority.
+The public repo catalog is a governance-controlled projection and is not a
+place to browse private-truth repos as first-class catalog entries.
 
 ## Plane Definitions
 
@@ -171,7 +173,7 @@ Custodian consumes RepoGraph-derived boundary artifacts and verifies drift
 
 Avoid circular authority:
 
-- private topology repositories must not define platform language
+- `PrivateManifest` and other private-truth repositories must not define platform language
 - `PlatformDeployment` must not define platform language
 - `OperationsCenter` must not define platform language
 - `Warehouse` must not define platform language

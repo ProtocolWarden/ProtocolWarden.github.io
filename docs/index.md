@@ -37,7 +37,7 @@ It explains:
 - [Ecosystem Overview](overview/ecosystem.md)
 - [Layered Architecture](architecture/layered-architecture.md)
 - [Protocol Overview](protocols/index.md)
-- [Repository Catalog](repos/operationscenter.md)
+- [Repository Catalog](repos/index.md)
 
 ## Operational References
 
@@ -55,7 +55,7 @@ ProtocolWarden is a contract-first platform built around explicit boundaries:
 - `ExecutorRuntime` owns runtime invocation mechanics
 - `RepoGraph` owns the shared ontology, topology, projection, and boundary language
 - `PlatformManifest` publishes the public graph instance and public-safe projections
-- a private topology layer supplies private truth in that language
+- the private-truth layer supplies private graph truth in that language
 - `Custodian` consumes RepoGraph boundary artifacts and enforces public-surface drift checks
 - `PlatformDeployment` (deployment overlay repo) owns deployment and local
   hosting concerns
@@ -98,23 +98,21 @@ graph LR
     RX[RxP]
     ER[ExecutorRuntime]
     PM[PlatformManifest]
-    PRM[Private Topology\nLayer]
+    PT[Private truth layer]
     SR[SourceRegistry]
     WS[PlatformDeployment]
     CU[Custodian]
     WH[Warehouse]
-    MP[Managed Private\nProject]
-
     OC --> OPS
     OPS --> SB
     OPS --> CX
     OPS --> RX
     OPS --> ER
     OPS --> PM
-    OPS --> PRM
+    OPS --> PT
     OPS --> SR
     OPS --> CU
-    OPS --> MP
+    OPS --> PT
     WS --> OPS
     WH -. utility only .-> OPS
 ```

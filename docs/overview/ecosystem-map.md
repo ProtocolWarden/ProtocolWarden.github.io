@@ -4,7 +4,7 @@
 graph TD
     DOCS[ProtocolWarden.github.io]
     PM[PlatformManifest]
-    PRM[Private Topology\nRepository]
+    PT[Private truth layer]
     OC[OperatorConsole]
     OPS[OperationsCenter]
     SB[SwitchBoard]
@@ -15,18 +15,17 @@ graph TD
     WS[PlatformDeployment]
     SR[SourceRegistry]
     WH[Warehouse]
-    MP[Managed Private\nProject]
 
     DOCS --> PM
     DOCS --> CX
     DOCS --> RX
     DOCS --> OPS
-    PM --> PRM
+    PM --> PT
     OC --> OPS
     OPS --> SB
     OPS --> ER
     OPS --> CU
-    OPS --> MP
+    OPS --> PT
     OPS --> SR
     OPS --> WH
     OPS --> PM

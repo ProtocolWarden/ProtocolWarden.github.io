@@ -28,3 +28,10 @@ Private material may include:
 
 Public knowledge should be a projection of private truth when those surfaces are
 related. This avoids documentation drift and privacy leakage.
+
+The projection boundary is not a manual copy step. RepoGraph defines the
+projection rules, the private-truth layer generates boundary artifacts from
+private truth, and Custodian verifies public surfaces against those artifacts.
+
+The public site is current-only. It does not catalog private-truth repos as
+first-class browseable pages.

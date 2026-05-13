@@ -33,7 +33,7 @@ Expected source repos for extraction:
 - `CxRP`
 - `RxP`
 - `PlatformManifest`
-- private topology repositories
+- `PrivateManifest`
 - `Custodian`
 - `ExecutorRuntime`
 - `SwitchBoard`
@@ -62,7 +62,7 @@ Replace the current high-level repo pages with repo-derived material for:
 - `CxRP`
 - `RxP`
 - `PlatformManifest`
-- private topology repositories
+- `PrivateManifest`
 - `Custodian`
 - `ExecutorRuntime`
 - `SwitchBoard`

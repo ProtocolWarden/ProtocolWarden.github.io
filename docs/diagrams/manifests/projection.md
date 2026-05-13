@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD
-    Private[Private Topology Layer\nprivate superset]
+    Private[Private truth layer\nprivate graph truth]
     Rules[Projection Rules]
     Public[PlatformManifest\npublic-safe projection]
     Local[Local Manifest\nruntime-only overlay]

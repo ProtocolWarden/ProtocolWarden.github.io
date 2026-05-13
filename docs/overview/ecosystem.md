@@ -33,7 +33,7 @@ without collapsing all semantics into one repository.
 ### Platform Inventory and Governance
 
 - PlatformManifest
-- private topology repositories
+- private-truth layer
 - SourceRegistry
 - PlatformDeployment
 - Custodian
@@ -55,6 +55,7 @@ The split is deliberate:
 - runtime mechanics remain canonical in runtime repos
 - topology and visibility remain canonical in manifest repos
 - public documentation remains canonical in this repo
+- managed projects remain consumers of the published ecosystem, not owners of it
 
 That separation reduces schema duplication, ownership drift, and god-repo
 behavior.

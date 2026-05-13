@@ -14,7 +14,7 @@ The control plane is the part of the ecosystem that plans, routes, and governs.
 ## Non-control-plane repos
 
 - PlatformManifest
-- private topology repositories
+- private-truth layer
 - Custodian
 - PlatformDeployment
 - Warehouse

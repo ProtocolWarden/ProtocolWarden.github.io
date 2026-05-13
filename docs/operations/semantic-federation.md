@@ -7,7 +7,7 @@ superseded_by: null
 
 # Semantic Federation
 
-Semantic federation is the cross-repo regression gate that keeps the RepoGraph
+Semantic federation is the cross-repo governance gate that keeps the RepoGraph
 architecture durable after the migration and hardening passes.
 
 ## What it verifies
@@ -22,15 +22,15 @@ architecture durable after the migration and hardening passes.
 
 ## Local execution
 
-Use the `Custodian` migration gate against a workspace root and a materialized
+Use the `Custodian` governance gate against a workspace root and a materialized
 boundary artifact:
 
 ```bash
-custodian-repograph-migration-gate \
+custodian-repograph-governance-gate \
   --repo-root /path/to/workspace \
   --boundary-artifact /path/to/boundary_disclosure_artifact.json \
-  --json-out /tmp/repograph-federation.json \
-  --summary-out /tmp/repograph-federation.md
+  --json-out /tmp/repograph-governance.json \
+  --summary-out /tmp/repograph-governance.md
 ```
 
 ## CI execution
@@ -50,6 +50,15 @@ same gate in GitHub Actions.
 - malformed artifact: export or transport error, fail closed
 - ownership drift / duplicate vocabulary: RepoGraph or consumer regression
 - legacy path regression: a forbidden compatibility path reappeared
+
+## Policy split
+
+The public-surface catalog policy is separate from privacy detection:
+
+- `custodian.policy.public_surface_catalog` governs browseable repo pages
+- privacy detectors govern leakage, forbidden names, and boundary validity
+- architecture docs may still name `PrivateManifest` when describing private
+  truth, but the public catalog may not promote it to a first-class repo page
 
 This workflow is operational glue only. It does not define graph semantics or
 boundary policy. It preserves the enforcement boundary by consuming the same

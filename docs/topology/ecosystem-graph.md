@@ -9,11 +9,10 @@ graph TD
     RX[RxP]
     ER[ExecutorRuntime]
     PM[PlatformManifest]
-    PRM[Private Topology\nRepository]
+    PT[Private truth layer]
     CU[Custodian]
     WS[PlatformDeployment]
     WH[Warehouse]
-    MP[Managed Private\nProject]
     SR[SourceRegistry]
     DOCS[ProtocolWarden.github.io]
 
@@ -26,10 +25,9 @@ graph TD
     OPS --> RX
     OPS --> ER
     OPS --> PM
-    OPS --> PRM
+    OPS --> PT
     OPS --> SR
     OPS --> CU
-    OPS --> MP
     WS --> OPS
     WH --> OPS
 ```
