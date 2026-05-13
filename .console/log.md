@@ -3,6 +3,13 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-13 — Enable navigation.tabs for visible section navigation
+
+- Added `navigation.tabs` and `navigation.tabs.sticky` — puts top-level sections in a persistent tab bar; without this all nav was hidden in the sidebar only.
+- Added `navigation.path` (breadcrumbs) and `navigation.indexes` (section index pages clickable).
+- Removed `navigation.expand` — with this many sections it made the sidebar a wall of text.
+- Removed custodian-audit.yml — this is a markdown-only docs repo, nothing to audit.
+
 ## 2026-05-13 — Add GitHub Actions deploy workflow
 
 - Added `.github/workflows/deploy.yml` — runs `mkdocs gh-deploy --force` on push to main.
