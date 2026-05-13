@@ -21,19 +21,18 @@ _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 - Renamed `WS[PlatformDeployment]` node identifier to `PD` (legacy `WS` was a WorkStation holdover).
 - Added `PD --> OPS` edge to replace the old `WS --> OPS`.
 
-## Recent Decisions
+## 2026-05-13 — Public Surface Consolidation Plan workstreams C, D, J
 
-_Log significant choices here so they survive context resets._
-
-| Decision | Rationale | Date |
-|----------|-----------|------|
-| [what was decided] | [why] | [date] |
+- Homepage (C): rewrote opening to be ecosystem-first; added GitHub org link; explicit profile README vs Pages distinction; replaced abstract diagram with layered subgraph using actual repo names.
+- Public repo catalog (D): added `profile_front_door` row (ProtocolWarden/ProtocolWarden) and `knowledge_surface` row (ProtocolWarden.github.io).
+- Diagrams (J): layered stack updated with current repo names; added repo-constellation, protocol-stack, projection-flow pages; updated diagrams index and mkdocs.yml nav.
+- Workstreams E, H, I, K, L verified already complete from prior sessions.
 
 ## Stop Points
 
 _Where did you leave off? What should be verified next session?_
 
-- [what to pick up next]
+- Consolidation plan complete. Verify site renders correctly after deploy workflow runs.
 
 ## Notes
 
