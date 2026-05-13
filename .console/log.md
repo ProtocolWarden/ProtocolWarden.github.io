@@ -40,6 +40,12 @@ _Free-form scratch. Clear periodically — old entries can be deleted once no lo
 
 ---
 
+## 2026-05-13 — Expand architectural-invariants.md with per-repo table and ARCH detector list
+
+- Added per-repo invariant table (What must always be / must never become) covering RepoGraph, PlatformManifest, PlatformDeployment, Warehouse, PrivateManifest, Custodian, OperationsCenter.
+- Added ARCH detector table (ARCH1-ARCH4) documenting what each machine-checks.
+- Added X2 cross-repo import enforcement section.
+
 ## 2026-05-13 — Add graph-layer-stack diagram
 
 - Added docs/diagrams/ecosystem/graph-layer-stack.md — language → instance → deployment → validation layers.
