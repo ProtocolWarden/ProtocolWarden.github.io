@@ -17,5 +17,5 @@ Code-context packaging and staging for LLM-oriented workflows.
 - orchestration owner
 - topology owner
 - runtime execution surface
-- platform spine
+- platform authority boundary
 - governance authority

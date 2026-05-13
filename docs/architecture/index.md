@@ -10,6 +10,7 @@ Start with the [Platform Architecture Charter](platform-architecture-charter.md)
 
 - [Platform Architecture Charter](platform-architecture-charter.md)
 - [Documentation Status](doc-status.md)
+- [Stable Baselines](stable-baselines/repograph-post-pass-hardening-v1.md)
 - [Layered Architecture](layered-architecture.md)
 - [Execution Flow](execution-flow.md)
 - [Topology Model](topology-model.md)

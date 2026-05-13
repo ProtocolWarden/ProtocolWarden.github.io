@@ -39,6 +39,11 @@ It explains:
 - [Protocol Overview](protocols/index.md)
 - [Repository Catalog](repos/operationscenter.md)
 
+## Operational References
+
+- [RepoGraph Post-PASS Hardening Baseline](architecture/stable-baselines/repograph-post-pass-hardening-v1.md)
+- [Semantic Federation](operations/semantic-federation.md)
+
 ## Ecosystem in 60 Seconds
 
 ProtocolWarden is a contract-first platform built around explicit boundaries:

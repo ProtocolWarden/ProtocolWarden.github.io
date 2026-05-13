@@ -117,7 +117,7 @@ Examples:
 | `PlatformDeployment` (deployment overlay repo) | local/private topography, runtime placement, env overlays, ports, compose layout | ontology, public topology language, private topology truth, orchestration policy |
 | `Custodian` | audit rules, drift checks, projection safety checks, boundary validation, reports | topology truth, projection truth, orchestration behavior, deployment state |
 | `OperationsCenter` | orchestration behavior, task binding, dispatch, runtime consumption of composed manifest truth | canonical ontology, private manifest data, projection policy definitions, local deployment topology |
-| `Warehouse` | code-context packaging utility behavior, kits, crates, pallets, yard mechanics | platform spine semantics, topology truth, registry truth, orchestration, governance |
+| `Warehouse` | code-context packaging utility behavior, kits, crates, pallets, yard mechanics | graph authority, topology truth, registry truth, orchestration, governance |
 
 ## Public, Private, and Local Layering
 
@@ -146,7 +146,7 @@ platform -> private -> (project or work_scope) -> local
 
 ## Warehouse Downgrade Note
 
-`Warehouse` is intentionally not part of the platform spine.
+`Warehouse` is intentionally not part of the platform authority boundary.
 
 It is a context-packaging utility for code selection, chunking, staging, and
 debugging workflows. It must not be modeled as:
