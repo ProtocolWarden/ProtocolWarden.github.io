@@ -40,6 +40,12 @@ _Free-form scratch. Clear periodically — old entries can be deleted once no lo
 
 ---
 
+## 2026-05-13 — Add graph-layer-stack diagram
+
+- Added docs/diagrams/ecosystem/graph-layer-stack.md — language → instance → deployment → validation layers.
+- Wired into mkdocs.yml nav and diagrams/index.md.
+- Explicitly captures the topography boundary: RepoGraph owns vocabulary, PlatformDeployment owns runtime placement truth.
+
 ## 2026-05-13 — Custodian phase 2 — README, CHANGELOG, DC7, R6 fixes
 
 - README restructured with What this repo is/is not, Getting Started, Architecture sections.

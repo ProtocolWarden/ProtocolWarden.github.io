@@ -8,6 +8,7 @@ names and should stay synchronized with the written architecture.
 - [Layered Stack](ecosystem/layered-stack.md) — four-layer ecosystem overview with repo names
 - [Repo Constellation](ecosystem/repo-constellation.md) — full repo graph with dependency edges
 - [Protocol Stack](ecosystem/protocol-stack.md) — contract and protocol ownership
+- [Graph Layer Stack](ecosystem/graph-layer-stack.md) — language → instance → deployment → validation layers
 
 ## Execution
 

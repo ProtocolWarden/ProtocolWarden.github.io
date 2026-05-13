@@ -133,6 +133,7 @@ nav:
       - Ecosystem Layered Stack: diagrams/ecosystem/layered-stack.md
       - Repo Constellation: diagrams/ecosystem/repo-constellation.md
       - Protocol Stack: diagrams/ecosystem/protocol-stack.md
+      - Graph Layer Stack: diagrams/ecosystem/graph-layer-stack.md
       - Execution Sequence: diagrams/execution/sequence.md
       - Governance Enforcement: diagrams/governance/enforcement.md
       - Manifest Projection: diagrams/manifests/projection.md
