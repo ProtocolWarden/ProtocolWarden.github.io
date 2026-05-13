@@ -61,3 +61,8 @@ _Free-form scratch. Clear periodically — old entries can be deleted once no lo
 - protocols/index.md updated with markdown links.
 - .custodian/config.yaml: doc_conventions.exclude_path_patterns added for all section index pages (correct top-level placement, not inside audit:).
 - pre-commit hook added (.hooks/pre-commit).
+
+## 2026-05-13 — Add CLAUDE.md and .custodian/tmp*.yaml to .gitignore
+
+- Added CLAUDE.md to .gitignore
+- Added .custodian/tmp*.yaml to exclude custodian audit temp files
