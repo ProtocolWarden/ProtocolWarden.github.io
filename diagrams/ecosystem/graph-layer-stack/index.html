@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://protocolwarden.github.io/observability/audit-system/">
+        <link rel="canonical" href="https://protocolwarden.github.io/diagrams/ecosystem/graph-layer-stack/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../protocol-stack/">
       
       
-        <link rel="next" href="../representative-runs/">
+        <link rel="next" href="../../execution/sequence/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Audit System - ProtocolWarden</title>
+        <title>Graph Layer Stack - ProtocolWarden</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#audit-system" class="md-skip">
+        <a href="#graph-layer-stack" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="ProtocolWarden" class="md-header__button md-logo" aria-label="ProtocolWarden" data-md-component="logo">
+    <a href="../../.." title="ProtocolWarden" class="md-header__button md-logo" aria-label="ProtocolWarden" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Audit System
+              Graph Layer Stack
             
           </span>
         </div>
@@ -221,7 +221,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -242,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../getting-started/" class="md-tabs__link">
+        <a href="../../../getting-started/" class="md-tabs__link">
           
   
   
@@ -264,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../overview/" class="md-tabs__link">
+        <a href="../../../overview/" class="md-tabs__link">
           
   
   
@@ -286,7 +286,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../architecture/" class="md-tabs__link">
+        <a href="../../../architecture/" class="md-tabs__link">
           
   
   
@@ -308,7 +308,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../ontology/" class="md-tabs__link">
+        <a href="../../../ontology/" class="md-tabs__link">
           
   
   
@@ -330,7 +330,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../topology/" class="md-tabs__link">
+        <a href="../../../topology/" class="md-tabs__link">
           
   
   
@@ -352,7 +352,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../governance/" class="md-tabs__link">
+        <a href="../../../governance/" class="md-tabs__link">
           
   
   
@@ -374,7 +374,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../protocols/" class="md-tabs__link">
+        <a href="../../../protocols/" class="md-tabs__link">
           
   
   
@@ -396,7 +396,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../contracts/" class="md-tabs__link">
+        <a href="../../../contracts/" class="md-tabs__link">
           
   
   
@@ -418,7 +418,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../repos/" class="md-tabs__link">
+        <a href="../../../repos/" class="md-tabs__link">
           
   
   
@@ -436,11 +436,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../diagrams/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -458,13 +460,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../observability/" class="md-tabs__link">
           
   
   
@@ -486,7 +486,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../audits/" class="md-tabs__link">
+        <a href="../../../audits/" class="md-tabs__link">
           
   
   
@@ -508,7 +508,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../glossary/" class="md-tabs__link">
+        <a href="../../../glossary/" class="md-tabs__link">
           
   
   
@@ -530,7 +530,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../changelog/" class="md-tabs__link">
+        <a href="../../../changelog/" class="md-tabs__link">
           
   
   
@@ -552,7 +552,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../roadmap/" class="md-tabs__link">
+        <a href="../../../roadmap/" class="md-tabs__link">
           
   
   
@@ -574,7 +574,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../generated/" class="md-tabs__link">
+        <a href="../../../generated/" class="md-tabs__link">
           
   
   
@@ -596,7 +596,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../operations/semantic-federation/" class="md-tabs__link">
+        <a href="../../../operations/semantic-federation/" class="md-tabs__link">
           
   
   
@@ -638,7 +638,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="ProtocolWarden" class="md-nav__button md-logo" aria-label="ProtocolWarden" data-md-component="logo">
+    <a href="../../.." title="ProtocolWarden" class="md-nav__button md-logo" aria-label="ProtocolWarden" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -668,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -718,7 +718,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting-started/" class="md-nav__link ">
+            <a href="../../../getting-started/" class="md-nav__link ">
               
   
   
@@ -801,7 +801,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../overview/" class="md-nav__link ">
+            <a href="../../../overview/" class="md-nav__link ">
               
   
   
@@ -845,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/ecosystem/" class="md-nav__link">
+      <a href="../../../overview/ecosystem/" class="md-nav__link">
         
   
   
@@ -873,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/ecosystem-role-matrix/" class="md-nav__link">
+      <a href="../../../overview/ecosystem-role-matrix/" class="md-nav__link">
         
   
   
@@ -901,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/design-philosophy/" class="md-nav__link">
+      <a href="../../../overview/design-philosophy/" class="md-nav__link">
         
   
   
@@ -929,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/public-vs-private/" class="md-nav__link">
+      <a href="../../../overview/public-vs-private/" class="md-nav__link">
         
   
   
@@ -957,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/architecture-principles/" class="md-nav__link">
+      <a href="../../../overview/architecture-principles/" class="md-nav__link">
         
   
   
@@ -985,7 +985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/operational-model/" class="md-nav__link">
+      <a href="../../../overview/operational-model/" class="md-nav__link">
         
   
   
@@ -1013,7 +1013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/ecosystem-map/" class="md-nav__link">
+      <a href="../../../overview/ecosystem-map/" class="md-nav__link">
         
   
   
@@ -1095,7 +1095,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../architecture/" class="md-nav__link ">
+            <a href="../../../architecture/" class="md-nav__link ">
               
   
   
@@ -1139,7 +1139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/platform-architecture-charter/" class="md-nav__link">
+      <a href="../../../architecture/platform-architecture-charter/" class="md-nav__link">
         
   
   
@@ -1167,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/layered-architecture/" class="md-nav__link">
+      <a href="../../../architecture/layered-architecture/" class="md-nav__link">
         
   
   
@@ -1195,7 +1195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/simple-platform-model/" class="md-nav__link">
+      <a href="../../../architecture/simple-platform-model/" class="md-nav__link">
         
   
   
@@ -1223,7 +1223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/orchestration-model/" class="md-nav__link">
+      <a href="../../../architecture/orchestration-model/" class="md-nav__link">
         
   
   
@@ -1251,7 +1251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/execution-flow/" class="md-nav__link">
+      <a href="../../../architecture/execution-flow/" class="md-nav__link">
         
   
   
@@ -1279,7 +1279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/runtime-binding/" class="md-nav__link">
+      <a href="../../../architecture/runtime-binding/" class="md-nav__link">
         
   
   
@@ -1307,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/capability-model/" class="md-nav__link">
+      <a href="../../../architecture/capability-model/" class="md-nav__link">
         
   
   
@@ -1335,7 +1335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/audit-architecture/" class="md-nav__link">
+      <a href="../../../architecture/audit-architecture/" class="md-nav__link">
         
   
   
@@ -1363,7 +1363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/artifact-flow/" class="md-nav__link">
+      <a href="../../../architecture/artifact-flow/" class="md-nav__link">
         
   
   
@@ -1391,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/observability-model/" class="md-nav__link">
+      <a href="../../../architecture/observability-model/" class="md-nav__link">
         
   
   
@@ -1419,7 +1419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/topology-model/" class="md-nav__link">
+      <a href="../../../architecture/topology-model/" class="md-nav__link">
         
   
   
@@ -1503,7 +1503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/stable-baselines/repograph-post-pass-hardening-v1/" class="md-nav__link">
+      <a href="../../../architecture/stable-baselines/repograph-post-pass-hardening-v1/" class="md-nav__link">
         
   
   
@@ -1585,7 +1585,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../ontology/" class="md-nav__link ">
+            <a href="../../../ontology/" class="md-nav__link ">
               
   
   
@@ -1629,7 +1629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ontology/ontology-vs-topology-vs-topography/" class="md-nav__link">
+      <a href="../../../ontology/ontology-vs-topology-vs-topography/" class="md-nav__link">
         
   
   
@@ -1657,7 +1657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ontology/graph-semantics/" class="md-nav__link">
+      <a href="../../../ontology/graph-semantics/" class="md-nav__link">
         
   
   
@@ -1685,7 +1685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ontology/entities/" class="md-nav__link">
+      <a href="../../../ontology/entities/" class="md-nav__link">
         
   
   
@@ -1713,7 +1713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ontology/vocabulary/" class="md-nav__link">
+      <a href="../../../ontology/vocabulary/" class="md-nav__link">
         
   
   
@@ -1741,7 +1741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ontology/execution-objects/" class="md-nav__link">
+      <a href="../../../ontology/execution-objects/" class="md-nav__link">
         
   
   
@@ -1769,7 +1769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ontology/governance-objects/" class="md-nav__link">
+      <a href="../../../ontology/governance-objects/" class="md-nav__link">
         
   
   
@@ -1797,7 +1797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ontology/audit-objects/" class="md-nav__link">
+      <a href="../../../ontology/audit-objects/" class="md-nav__link">
         
   
   
@@ -1825,7 +1825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ontology/glossary-index/" class="md-nav__link">
+      <a href="../../../ontology/glossary-index/" class="md-nav__link">
         
   
   
@@ -1899,7 +1899,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../topology/" class="md-nav__link ">
+            <a href="../../../topology/" class="md-nav__link ">
               
   
   
@@ -1943,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topology/ecosystem-graph/" class="md-nav__link">
+      <a href="../../../topology/ecosystem-graph/" class="md-nav__link">
         
   
   
@@ -1971,7 +1971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topology/repograph-boundary/" class="md-nav__link">
+      <a href="../../../topology/repograph-boundary/" class="md-nav__link">
         
   
   
@@ -1999,7 +1999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topology/semantic-boundary-workflow/" class="md-nav__link">
+      <a href="../../../topology/semantic-boundary-workflow/" class="md-nav__link">
         
   
   
@@ -2027,7 +2027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topology/repo-dependencies/" class="md-nav__link">
+      <a href="../../../topology/repo-dependencies/" class="md-nav__link">
         
   
   
@@ -2055,7 +2055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topology/execution-routing/" class="md-nav__link">
+      <a href="../../../topology/execution-routing/" class="md-nav__link">
         
   
   
@@ -2083,7 +2083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topology/service-relationships/" class="md-nav__link">
+      <a href="../../../topology/service-relationships/" class="md-nav__link">
         
   
   
@@ -2111,7 +2111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topology/artifact-flow/" class="md-nav__link">
+      <a href="../../../topology/artifact-flow/" class="md-nav__link">
         
   
   
@@ -2139,7 +2139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topology/control-plane/" class="md-nav__link">
+      <a href="../../../topology/control-plane/" class="md-nav__link">
         
   
   
@@ -2217,7 +2217,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../governance/" class="md-nav__link ">
+            <a href="../../../governance/" class="md-nav__link ">
               
   
   
@@ -2261,7 +2261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/architectural-invariants/" class="md-nav__link">
+      <a href="../../../governance/architectural-invariants/" class="md-nav__link">
         
   
   
@@ -2289,7 +2289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/audit-policy/" class="md-nav__link">
+      <a href="../../../governance/audit-policy/" class="md-nav__link">
         
   
   
@@ -2317,7 +2317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/boundary-enforcement/" class="md-nav__link">
+      <a href="../../../governance/boundary-enforcement/" class="md-nav__link">
         
   
   
@@ -2345,7 +2345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/schema-evolution/" class="md-nav__link">
+      <a href="../../../governance/schema-evolution/" class="md-nav__link">
         
   
   
@@ -2373,7 +2373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/public-repo-catalog/" class="md-nav__link">
+      <a href="../../../governance/public-repo-catalog/" class="md-nav__link">
         
   
   
@@ -2401,7 +2401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/profile-readme-vs-pages-site/" class="md-nav__link">
+      <a href="../../../governance/profile-readme-vs-pages-site/" class="md-nav__link">
         
   
   
@@ -2429,7 +2429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/external-integrations/" class="md-nav__link">
+      <a href="../../../governance/external-integrations/" class="md-nav__link">
         
   
   
@@ -2457,7 +2457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/capability-governance/" class="md-nav__link">
+      <a href="../../../governance/capability-governance/" class="md-nav__link">
         
   
   
@@ -2485,7 +2485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/runtime-governance/" class="md-nav__link">
+      <a href="../../../governance/runtime-governance/" class="md-nav__link">
         
   
   
@@ -2513,7 +2513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/drift-detection/" class="md-nav__link">
+      <a href="../../../governance/drift-detection/" class="md-nav__link">
         
   
   
@@ -2581,7 +2581,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../protocols/" class="md-nav__link ">
+            <a href="../../../protocols/" class="md-nav__link ">
               
   
   
@@ -2625,7 +2625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../protocols/cxrp/" class="md-nav__link">
+      <a href="../../../protocols/cxrp/" class="md-nav__link">
         
   
   
@@ -2653,7 +2653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../protocols/rxp/" class="md-nav__link">
+      <a href="../../../protocols/rxp/" class="md-nav__link">
         
   
   
@@ -2681,7 +2681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../protocols/platformmanifest/" class="md-nav__link">
+      <a href="../../../protocols/platformmanifest/" class="md-nav__link">
         
   
   
@@ -2709,7 +2709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../protocols/execution-contracts/" class="md-nav__link">
+      <a href="../../../protocols/execution-contracts/" class="md-nav__link">
         
   
   
@@ -2737,7 +2737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../protocols/runtime-contracts/" class="md-nav__link">
+      <a href="../../../protocols/runtime-contracts/" class="md-nav__link">
         
   
   
@@ -2795,7 +2795,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../contracts/" class="md-nav__link ">
+            <a href="../../../contracts/" class="md-nav__link ">
               
   
   
@@ -2890,7 +2890,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../repos/" class="md-nav__link ">
+            <a href="../../../repos/" class="md-nav__link ">
               
   
   
@@ -2934,7 +2934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/repograph/" class="md-nav__link">
+      <a href="../../../repos/repograph/" class="md-nav__link">
         
   
   
@@ -2962,7 +2962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/operationscenter/" class="md-nav__link">
+      <a href="../../../repos/operationscenter/" class="md-nav__link">
         
   
   
@@ -2990,7 +2990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/switchboard/" class="md-nav__link">
+      <a href="../../../repos/switchboard/" class="md-nav__link">
         
   
   
@@ -3018,7 +3018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/cxrp/" class="md-nav__link">
+      <a href="../../../repos/cxrp/" class="md-nav__link">
         
   
   
@@ -3046,7 +3046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/rxp/" class="md-nav__link">
+      <a href="../../../repos/rxp/" class="md-nav__link">
         
   
   
@@ -3074,7 +3074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/executorruntime/" class="md-nav__link">
+      <a href="../../../repos/executorruntime/" class="md-nav__link">
         
   
   
@@ -3102,7 +3102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/custodian/" class="md-nav__link">
+      <a href="../../../repos/custodian/" class="md-nav__link">
         
   
   
@@ -3130,7 +3130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/platformmanifest/" class="md-nav__link">
+      <a href="../../../repos/platformmanifest/" class="md-nav__link">
         
   
   
@@ -3158,7 +3158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/sourceregistry/" class="md-nav__link">
+      <a href="../../../repos/sourceregistry/" class="md-nav__link">
         
   
   
@@ -3186,7 +3186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/operatorconsole/" class="md-nav__link">
+      <a href="../../../repos/operatorconsole/" class="md-nav__link">
         
   
   
@@ -3214,7 +3214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/platformdeployment/" class="md-nav__link">
+      <a href="../../../repos/platformdeployment/" class="md-nav__link">
         
   
   
@@ -3242,7 +3242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/warehouse/" class="md-nav__link">
+      <a href="../../../repos/warehouse/" class="md-nav__link">
         
   
   
@@ -3270,7 +3270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repos/external-integrations/" class="md-nav__link">
+      <a href="../../../repos/external-integrations/" class="md-nav__link">
         
   
   
@@ -3302,6 +3302,8 @@
       
   
   
+    
+  
   
   
     
@@ -3331,20 +3333,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../diagrams/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -3362,13 +3367,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3388,7 +3393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../diagrams/ecosystem/layered-stack/" class="md-nav__link">
+      <a href="../layered-stack/" class="md-nav__link">
         
   
   
@@ -3416,7 +3421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../diagrams/ecosystem/repo-constellation/" class="md-nav__link">
+      <a href="../repo-constellation/" class="md-nav__link">
         
   
   
@@ -3444,7 +3449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../diagrams/ecosystem/protocol-stack/" class="md-nav__link">
+      <a href="../protocol-stack/" class="md-nav__link">
         
   
   
@@ -3469,10 +3474,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../diagrams/ecosystem/graph-layer-stack/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Graph Layer Stack
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -3488,6 +3520,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#layer-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Responsibilities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-topography-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Topography Boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3500,7 +3574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../diagrams/execution/sequence/" class="md-nav__link">
+      <a href="../../execution/sequence/" class="md-nav__link">
         
   
   
@@ -3528,7 +3602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../diagrams/governance/enforcement/" class="md-nav__link">
+      <a href="../../governance/enforcement/" class="md-nav__link">
         
   
   
@@ -3556,7 +3630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../diagrams/manifests/projection/" class="md-nav__link">
+      <a href="../../manifests/projection/" class="md-nav__link">
         
   
   
@@ -3584,7 +3658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../diagrams/manifests/projection-flow/" class="md-nav__link">
+      <a href="../../manifests/projection-flow/" class="md-nav__link">
         
   
   
@@ -3616,8 +3690,6 @@
       
   
   
-    
-  
   
   
     
@@ -3643,23 +3715,20 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../observability/" class="md-nav__link ">
               
   
   
@@ -3677,13 +3746,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="">
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3700,19 +3769,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../observability/audit-system/" class="md-nav__link">
         
   
   
@@ -3728,7 +3788,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -3741,7 +3800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../representative-runs/" class="md-nav__link">
+      <a href="../../../observability/representative-runs/" class="md-nav__link">
         
   
   
@@ -3769,7 +3828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../drift-analysis/" class="md-nav__link">
+      <a href="../../../observability/drift-analysis/" class="md-nav__link">
         
   
   
@@ -3797,7 +3856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../artifact-indexing/" class="md-nav__link">
+      <a href="../../../observability/artifact-indexing/" class="md-nav__link">
         
   
   
@@ -3825,7 +3884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../execution-traces/" class="md-nav__link">
+      <a href="../../../observability/execution-traces/" class="md-nav__link">
         
   
   
@@ -3853,7 +3912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reporting/" class="md-nav__link">
+      <a href="../../../observability/reporting/" class="md-nav__link">
         
   
   
@@ -3911,7 +3970,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../audits/" class="md-nav__link ">
+            <a href="../../../audits/" class="md-nav__link ">
               
   
   
@@ -3980,7 +4039,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../glossary/" class="md-nav__link ">
+            <a href="../../../glossary/" class="md-nav__link ">
               
   
   
@@ -4049,7 +4108,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../changelog/" class="md-nav__link ">
+            <a href="../../../changelog/" class="md-nav__link ">
               
   
   
@@ -4120,7 +4179,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../roadmap/" class="md-nav__link ">
+            <a href="../../../roadmap/" class="md-nav__link ">
               
   
   
@@ -4164,7 +4223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../roadmap/slice-01-canonical-docs-consolidation/" class="md-nav__link">
+      <a href="../../../roadmap/slice-01-canonical-docs-consolidation/" class="md-nav__link">
         
   
   
@@ -4222,7 +4281,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../generated/" class="md-nav__link ">
+            <a href="../../../generated/" class="md-nav__link ">
               
   
   
@@ -4324,7 +4383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operations/semantic-federation/" class="md-nav__link">
+      <a href="../../../operations/semantic-federation/" class="md-nav__link">
         
   
   
@@ -4372,6 +4431,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#layer-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Responsibilities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-topography-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Topography Boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -4395,7 +4484,7 @@
   
   
     <li class="md-path__item">
-      <a href="../.." class="md-path__link">
+      <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
     Home
@@ -4413,10 +4502,10 @@
     
     
       <li class="md-path__item">
-        <a href="../" class="md-path__link">
+        <a href="../../" class="md-path__link">
           
   <span class="md-ellipsis">
-    Observability
+    Diagrams
   </span>
 
         </a>
@@ -4438,14 +4527,82 @@
   
 
 
-<h1 id="audit-system">Audit System<a class="headerlink" href="#audit-system" title="Permanent link">&para;</a></h1>
-<p>The audit system exists to verify boundaries, preserve intent, and catch drift.</p>
-<p>It should explain:</p>
-<ul>
-<li>what is being checked</li>
-<li>why it is being checked</li>
-<li>who owns the semantics being enforced</li>
-</ul>
+<h1 id="graph-layer-stack">Graph Layer Stack<a class="headerlink" href="#graph-layer-stack" title="Permanent link">&para;</a></h1>
+<p>How the platform builds a complete picture of itself — from shared vocabulary to
+public projection to local deployment truth.</p>
+<pre class="mermaid"><code>graph TB
+  subgraph lang["Language Layer — RepoGraph"]
+    direction TB
+    ONT["ontology&lt;br/&gt;identity · visibility · disclosure modes · planes"]
+    TOP["topology&lt;br/&gt;edge kinds · validation · relationship models"]
+    PROJ["projection&lt;br/&gt;redaction rules · public-safe surface semantics"]
+    SCH["schema&lt;br/&gt;boundary artifact shape · version gates"]
+  end
+
+  subgraph pub["Public Instance Layer — PlatformManifest"]
+    direction TB
+    DECL["declared graph&lt;br/&gt;canonical repo names · edges · visibility"]
+    ART["boundary artifact&lt;br/&gt;public-safe projection of the graph"]
+  end
+
+  subgraph priv["Private / Runtime Layer"]
+    direction TB
+    PM_PRIV["PrivateManifest&lt;br/&gt;private names · restricted edges"]
+    PD["PlatformDeployment&lt;br/&gt;local topography · runtime placement truth"]
+  end
+
+  subgraph val["Validation Layer — Custodian"]
+    direction TB
+    CU["audit engine&lt;br/&gt;validates public surfaces against boundary artifacts"]
+  end
+
+  lang --&gt; pub
+  lang --&gt; priv
+  pub --&gt; val
+  priv --&gt; val</code></pre>
+<h2 id="layer-responsibilities">Layer Responsibilities<a class="headerlink" href="#layer-responsibilities" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Repo</th>
+<th>Owns</th>
+<th>Does Not Own</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Language</td>
+<td>RepoGraph</td>
+<td>graph vocabulary — ontology, topology, projection semantics, artifact schemas</td>
+<td>graph instances, runtime placement truth</td>
+</tr>
+<tr>
+<td>Public Instance</td>
+<td>PlatformManifest</td>
+<td>canonical public graph declaration, boundary artifact publication</td>
+<td>graph language definitions, deployment truth</td>
+</tr>
+<tr>
+<td>Private/Runtime</td>
+<td>PrivateManifest, PlatformDeployment</td>
+<td>private name overlays, local runtime topography</td>
+<td>public projection rules, graph language</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>Custodian</td>
+<td>auditing public repos against boundary artifacts</td>
+<td>graph authoring, publication</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-topography-boundary">The Topography Boundary<a class="headerlink" href="#the-topography-boundary" title="Permanent link">&para;</a></h2>
+<p>RepoGraph owns the <strong>vocabulary</strong> for topography — what a plane, edge kind, or
+deployment node <em>means</em>. It does not own runtime placement truth.</p>
+<p>Actual deployment truth — which service runs where, which node is provisioned —
+lives in PlatformDeployment and local manifests. RepoGraph gives them the
+language to express that truth consistently.</p>
 
 
 
@@ -4501,10 +4658,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
