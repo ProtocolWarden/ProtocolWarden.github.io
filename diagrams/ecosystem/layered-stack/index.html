@@ -16,7 +16,7 @@
         <link rel="prev" href="../../">
       
       
-        <link rel="next" href="../../execution/sequence/">
+        <link rel="next" href="../repo-constellation/">
       
       
         
@@ -3321,6 +3321,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3394,6 +3400,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Layered Stack
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -3411,6 +3435,92 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#layer-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer descriptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../repo-constellation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repo Constellation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../protocol-stack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Protocol Stack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -3487,6 +3597,34 @@
     
   
     Manifest Projection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manifests/projection-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projection Flow
   
 
     
@@ -4252,6 +4390,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#layer-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer descriptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -4320,18 +4477,59 @@
 
 <h1 id="ecosystem-layered-stack">Ecosystem Layered Stack<a class="headerlink" href="#ecosystem-layered-stack" title="Permanent link">&para;</a></h1>
 <pre class="mermaid"><code>graph TD
-    DOCS[Documentation]
-    GOV[Governance and Inventory]
-    PROTO[Protocols]
-    CTRL[Control Plane]
-    RUN[Runtime and Managed Projects]
-    HOST[Deployment]
+    subgraph surface ["Public Surface"]
+        DOCS["ProtocolWarden.github.io"]
+        README["ProtocolWarden/ProtocolWarden"]
+    end
+    subgraph semantic ["Semantic / Protocol Layer"]
+        RG[RepoGraph]
+        PM[PlatformManifest]
+        CX[CxRP]
+        RX[RxP]
+    end
+    subgraph control ["Control / Runtime Layer"]
+        OPS[OperationsCenter]
+        SB[SwitchBoard]
+        OC[OperatorConsole]
+        ER[ExecutorRuntime]
+    end
+    subgraph gov ["Governance / Lifecycle Layer"]
+        CU[Custodian]
+        SR[SourceRegistry]
+        PD[PlatformDeployment]
+        WH[Warehouse]
+    end
 
-    DOCS --&gt; GOV
-    GOV --&gt; PROTO
-    PROTO --&gt; CTRL
-    CTRL --&gt; RUN
-    HOST --&gt; CTRL</code></pre>
+    surface --&gt; semantic
+    semantic --&gt; control
+    control --&gt; gov</code></pre>
+<h2 id="layer-descriptions">Layer descriptions<a class="headerlink" href="#layer-descriptions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Public Surface</td>
+<td>Public-facing knowledge and orientation surfaces</td>
+</tr>
+<tr>
+<td>Semantic / Protocol Layer</td>
+<td>Graph language, public projection, execution and runtime contracts</td>
+</tr>
+<tr>
+<td>Control / Runtime Layer</td>
+<td>Orchestration, routing, operator entry, runtime invocation</td>
+</tr>
+<tr>
+<td>Governance / Lifecycle Layer</td>
+<td>Audit, source tracking, deployment, context packaging</td>
+</tr>
+</tbody>
+</table>
 
 
 
