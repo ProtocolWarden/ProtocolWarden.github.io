@@ -2275,6 +2275,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Invariants
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2291,6 +2309,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#per-repo-invariants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-repo invariants
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-checked-invariants-arch-detectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine-checked invariants (ARCH detectors)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-repo-import-enforcement-x2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-repo import enforcement (X2)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4372,6 +4442,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#per-repo-invariants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-repo invariants
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-checked-invariants-arch-detectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine-checked invariants (ARCH detectors)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-repo-import-enforcement-x2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-repo import enforcement (X2)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -4439,14 +4550,99 @@
 
 
 <h1 id="architectural-invariants">Architectural Invariants<a class="headerlink" href="#architectural-invariants" title="Permanent link">&para;</a></h1>
-<p>Examples of important invariants:</p>
+<p>Core invariants that every platform component must uphold:</p>
 <ul>
 <li>protocol repos own canonical protocol semantics</li>
 <li>manifest repos own topology and visibility truth</li>
 <li>public outputs are safe projections, not independent drift copies</li>
 <li>unknown visibility fails closed</li>
 <li>orchestrators consume, but do not absorb, protocol or topology ownership</li>
+<li>graph-language libraries own vocabulary, not graph instances or deployment truth</li>
 </ul>
+<h2 id="per-repo-invariants">Per-repo invariants<a class="headerlink" href="#per-repo-invariants" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Must always be</th>
+<th>Must never become</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RepoGraph</td>
+<td>graph-semantics library (ontology, topology, projection vocabulary)</td>
+<td>graph instance owner, private truth holder, orchestrator</td>
+</tr>
+<tr>
+<td>PlatformManifest</td>
+<td>public graph instance + projection publisher</td>
+<td>semantic vocabulary owner, private data store, orchestrator</td>
+</tr>
+<tr>
+<td>PlatformDeployment</td>
+<td>local topography and runtime placement truth</td>
+<td>canonical architecture owner, ontology owner</td>
+</tr>
+<tr>
+<td>Warehouse</td>
+<td>context packaging utility</td>
+<td>platform authority, topology owner, scheduler</td>
+</tr>
+<tr>
+<td>PrivateManifest</td>
+<td>private graph overlay (names, restricted edges)</td>
+<td>public projection authority, canonical semantic owner</td>
+</tr>
+<tr>
+<td>Custodian</td>
+<td>audit engine and drift detector</td>
+<td>topology truth holder, orchestration behavior owner</td>
+</tr>
+<tr>
+<td>OperationsCenter</td>
+<td>orchestration and task dispatch</td>
+<td>canonical ontology owner, private manifest holder</td>
+</tr>
+</tbody>
+</table>
+<h2 id="machine-checked-invariants-arch-detectors">Machine-checked invariants (ARCH detectors)<a class="headerlink" href="#machine-checked-invariants-arch-detectors" title="Permanent link">&para;</a></h2>
+<p>The following are enforced on every <code>custodian audit</code> run:</p>
+<table>
+<thead>
+<tr>
+<th>Detector</th>
+<th>Scope</th>
+<th>Checks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ARCH1</td>
+<td>Warehouse</td>
+<td>README describes it as a context packaging utility, not a platform or governance authority</td>
+</tr>
+<tr>
+<td>ARCH2</td>
+<td>PrivateManifest</td>
+<td>Does not define its own manifest vocabulary (schema files, Enum/RelationshipKind/ProjectionBehavior in Python)</td>
+</tr>
+<tr>
+<td>ARCH3</td>
+<td>PlatformDeployment</td>
+<td>Docs do not claim canonical architecture ownership</td>
+</tr>
+<tr>
+<td>ARCH4</td>
+<td>RepoGraph</td>
+<td>README does not claim graph instance ownership, private truth, or orchestration behavior</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cross-repo-import-enforcement-x2">Cross-repo import enforcement (X2)<a class="headerlink" href="#cross-repo-import-enforcement-x2" title="Permanent link">&para;</a></h2>
+<p>X2 checks that every cross-repo Python import has a declared edge in
+<code>PlatformManifest</code>. Undeclared imports fail the audit. The manifest is the
+machine-readable source of truth for which repos depend on which.</p>
 
 
 
