@@ -3,6 +3,10 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-19 — ADR 0006 complete: remove rename-in-progress banner from corerunner.md
+
+Rename is fully landed (all 6 phases merged). Removed the "Rename in progress" admonition from docs/repos/corerunner.md.
+
 ## 2026-05-19 — Fix custodian findings after CoreRunner rename
 
 - Deleted docs/repos/executorruntime.md (orphaned after rename to corerunner.md — DC7).

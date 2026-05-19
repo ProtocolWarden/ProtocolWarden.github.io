@@ -1,11 +1,5 @@
 # CoreRunner
 
-!!! note "Rename in progress"
-    This repo is being renamed from `ExecutorRuntime` → `CoreRunner` per
-    ADR 0006. The GitHub repo, package name (`executor_runtime` → `core_runner`),
-    and class name (`ExecutorRuntime` → `CoreRunner`) are all changing as part
-    of the same work order.
-
 ## Mission
 
 Canonical subprocess safety layer for the ProtocolWarden ecosystem. A Python
