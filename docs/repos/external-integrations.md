@@ -12,14 +12,17 @@ ProtocolWarden semantic authority.
 
 ## Examples
 
-- Archon
 - firecrawl
-- kodo
 - PraisonAI
 - Wan2GP
 - openclaw
 - Zonos-API
 - neuro-game-sdk
+
+## Retired forks (ADR 0005, 2026-05-18)
+
+- **kodo** — retired; replaced by [TeamExecutor](teamexecutor.md)
+- **Archon** — retired; replaced by [DagExecutor](dagexecutor.md)
 
 ## Rule
 

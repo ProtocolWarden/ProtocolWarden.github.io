@@ -127,6 +127,9 @@ nav:
       - OperatorConsole: repos/operatorconsole.md
       - PlatformDeployment: repos/platformdeployment.md
       - Warehouse: repos/warehouse.md
+      - TeamExecutor: repos/teamexecutor.md
+      - DagExecutor: repos/dagexecutor.md
+      - CritiqueExecutor: repos/critiqueexecutor.md
       - External Integrations: repos/external-integrations.md
   - Diagrams:
       - Overview: diagrams/index.md
