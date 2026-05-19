@@ -3,6 +3,12 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-19 — Fix Pages source reverting to main
+
+- Root cause: GitHub Pages was configured to serve from `main` branch (legacy Jekyll build), not from `gh-pages` where `mkdocs gh-deploy` puts the built HTML.
+- Immediate fix: set Pages source to `gh-pages` via GitHub API.
+- Codified fix: added "Ensure Pages source is gh-pages branch" step at end of `deploy.yml` that checks and corrects the source on every deploy run. Added `pages: write` permission.
+
 ## 2026-05-13 — Enable navigation.tabs for visible section navigation
 
 - Added `navigation.tabs` and `navigation.tabs.sticky` — puts top-level sections in a persistent tab bar; without this all nav was hidden in the sidebar only.
