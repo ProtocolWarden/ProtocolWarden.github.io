@@ -3,6 +3,10 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-19 — Restore docs/README.md (custodian R6)
+
+- Restoring docs/README.md after accidental deletion. Custodian R6 requires it as a docs/ tree index. MkDocs excludes it from the built site (index.md takes precedence) but that's a warning-only, not a build error.
+
 ## 2026-05-19 — Correct ExecutorRuntime role across all docs
 
 - ExecutorRuntime was misrepresented as a peer AI execution backend alongside TE/DE/CE.
