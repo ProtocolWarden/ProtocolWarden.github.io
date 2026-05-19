@@ -28,7 +28,10 @@ Orchestration and runtime coordination for the ProtocolWarden control plane.
 - CxRP
 - RxP
 - SwitchBoard
-- ExecutorRuntime
+- ExecutorRuntime *(via direct_local / aider_local adapters)*
+- TeamExecutor
+- DAGExecutor
+- CritiqueExecutor
 - PlatformManifest
 - private-truth layer
 - RepoGraph-backed public and private inputs

@@ -16,7 +16,7 @@ graph TD
         OPS[OperationsCenter]
         SB[SwitchBoard]
         OC[OperatorConsole]
-        ER[ExecutorRuntime]
+        ER[ExecutorRuntime\nsubprocess mechanics]
     end
     subgraph gov ["Governance / Lifecycle Layer"]
         CU[Custodian]

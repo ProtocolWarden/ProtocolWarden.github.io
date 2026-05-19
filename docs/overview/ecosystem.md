@@ -38,7 +38,13 @@ without collapsing all semantics into one repository.
 - OperatorConsole
 - OperationsCenter
 - SwitchBoard
-- ExecutorRuntime
+- ExecutorRuntime *(subprocess mechanics library used by direct_local / aider_local OC adapters)*
+
+### AI Execution Backends
+
+- TeamExecutor *(coordinator/worker/verifier topology)*
+- DAGExecutor *(DAG-based concurrent workflow execution)*
+- CritiqueExecutor *(adversarial and reflexion quality loops)*
 
 ### Platform Inventory and Governance
 
@@ -54,7 +60,6 @@ without collapsing all semantics into one repository.
 ### Managed Projects and Capability Providers
 
 - managed private projects
-- backend and tool integrations
 - external integrations and forked dependencies
 
 ## Why the Repo Split Exists

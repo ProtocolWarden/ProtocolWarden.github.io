@@ -6,16 +6,31 @@ selection.
 ## Main path
 
 - OperationsCenter produces or maps a proposal
-- SwitchBoard returns a routing decision (CxRP lane decision)
-- OperationsCenter binds runtime and capability context
-- An owned execution backend performs invocation:
-  - **TeamExecutor** — coordinator/worker/verifier pattern for team topology tasks
-  - **DAGExecutor** — rustworkx DAG with concurrent layer execution for structured workflows
-  - **CritiqueExecutor** — adversarial (proposer+critic) and reflexion modes for quality-gated tasks
-  - **ExecutorRuntime** — managed project workflow via RxP for direct-local execution
+- SwitchBoard returns a routing decision (`LaneDecision` with `backend_name` and `metadata["worker_backend"]`)
+- OperationsCenter dispatches to the corresponding backend adapter
+
+## AI execution backends
+
+The three owned AI execution backends run multi-agent topologies:
+
+- **TeamExecutor** — coordinator/worker/verifier cycle for team topology tasks
+- **DAGExecutor** — rustworkx DAG with concurrent layer execution for structured workflows
+- **CritiqueExecutor** — adversarial (proposer+critic) and reflexion modes for quality-gated tasks
+
+## Direct-local adapters
+
+For simpler single-agent tasks, OperationsCenter dispatches to:
+
+- **DirectLocal** — spawns claude CLI directly in the managed project workspace
+- **AiderLocal** — spawns aider CLI directly in the managed project workspace
+
+Both use **ExecutorRuntime** as their subprocess mechanics substrate (process-group-safe
+execution, timeout, stdout/stderr capture). ExecutorRuntime is a library, not a
+peer execution backend.
 
 ## Backend selection
 
-The `backend_name` field on the CxRP lane decision identifies which executor
-handles the invocation. SwitchBoard selects the backend based on the routing
-proposal; OperationsCenter dispatches to the corresponding adapter.
+`LaneDecision.backend_name` identifies which adapter handles the invocation.
+`LaneDecision.metadata["worker_backend"]` encodes the CLI preference
+(`claude_code` or `codex_cli`) for backends that support both.
+SwitchBoard sets both; OperationsCenter reads both at dispatch time.

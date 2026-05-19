@@ -14,7 +14,7 @@ does not do.
 | [OperationsCenter](operationscenter.md) | control_plane | orchestration consumer and execution coordinator |
 | [SwitchBoard](switchboard.md) | routing_policy | lane and backend selection |
 | [OperatorConsole](operatorconsole.md) | operator_entrypoint | operator-facing control surface |
-| [ExecutorRuntime](executorruntime.md) | runtime_execution | runtime invocation mechanics and adapters |
+| [ExecutorRuntime](executorruntime.md) | subprocess_mechanics | process-group-safe subprocess substrate for direct_local / aider_local OC adapters |
 | [Custodian](custodian.md) | governance_audit | boundary, drift, and semantic federation verifier |
 | [PlatformDeployment](platformdeployment.md) | deployment_runtime | runtime glue and local/CI ergonomics |
 | [SourceRegistry](sourceregistry.md) | source_lifecycle | source and fork inventory |

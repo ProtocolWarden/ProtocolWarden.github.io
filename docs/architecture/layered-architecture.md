@@ -8,7 +8,7 @@ graph TD
     GOV[Governance and Inventory Layer\nPlatformManifest / private topology repos / Custodian / SourceRegistry]
     PROTO[Protocol Layer\nCxRP / RxP]
     CTRL[Control Plane\nOperatorConsole / OperationsCenter / SwitchBoard]
-    RUN[Runtime and Managed Projects\nExecutorRuntime / managed projects / backends]
+    RUN[Runtime and Managed Projects\nTeamExecutor / DAGExecutor / CritiqueExecutor / DirectLocal+AiderLocal(via ExecutorRuntime)]
     HOST[Deployment and Hosting\nPlatformDeployment]
 
     DOCS --> GOV

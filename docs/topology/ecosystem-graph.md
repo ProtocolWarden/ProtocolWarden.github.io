@@ -8,7 +8,7 @@ graph TD
     SB[SwitchBoard]
     CX[CxRP]
     RX[RxP]
-    ER[ExecutorRuntime]
+    ER[ExecutorRuntime\nsubprocess substrate]
     TE[TeamExecutor]
     DE[DAGExecutor]
     CE[CritiqueExecutor]
@@ -30,7 +30,7 @@ graph TD
     OPS --> SB
     OPS --> CX
     OPS --> RX
-    OPS --> ER
+    OPS -->|direct_local / aider_local adapters| ER
     OPS --> TE
     OPS --> DE
     OPS --> CE
@@ -47,3 +47,7 @@ graph TD
     WS --> OPS
     WH --> OPS
 ```
+
+ExecutorRuntime is a subprocess mechanics library — not a peer AI execution backend.
+It is used by OC's `direct_local` and `aider_local` adapters only.
+TeamExecutor, DAGExecutor, and CritiqueExecutor do not use it.

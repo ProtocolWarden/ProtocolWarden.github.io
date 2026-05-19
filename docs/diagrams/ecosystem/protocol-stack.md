@@ -15,8 +15,8 @@ graph TD
         SB[SwitchBoard]
     end
     subgraph runtime ["Runtime Layer"]
-        ER[ExecutorRuntime]
-        BE[backend consumers]
+        ER[ExecutorRuntime\nsubprocess mechanics library]
+        BE[TeamExecutor / DAGExecutor / CritiqueExecutor\nAI execution backends]
     end
 
     graph --> contracts

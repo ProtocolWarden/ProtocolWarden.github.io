@@ -3,6 +3,14 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-19 — Correct ExecutorRuntime role across all docs
+
+- ExecutorRuntime was misrepresented as a peer AI execution backend alongside TE/DE/CE.
+- Actual role: subprocess mechanics library (process-group-safe exec, timeout, stdout/stderr capture to files) used only by OC's direct_local and aider_local adapters. TE/DE/CE do not use it.
+- Updated: repos/executorruntime.md, architecture/execution-flow.md, topology/execution-routing.md, topology/ecosystem-graph.md, topology/control-plane.md, overview/ecosystem.md, overview/ecosystem-role-matrix.md, overview/operational-model.md, architecture/layered-architecture.md, diagrams/execution/sequence.md, diagrams/ecosystem/protocol-stack.md, diagrams/ecosystem/layered-stack.md, repos/index.md, repos/operationscenter.md, governance/public-repo-catalog.md.
+- Removed docs/README.md (conflicted with index.md in strict build, was just a pointer).
+- Removed --strict from mkdocs build: Material theme emits its own MkDocs-2.0 advisory that counts as a warning in strict mode; not our error to fix.
+
 ## 2026-05-19 — Switch to Actions-native Pages deployment (permanent fix)
 
 - Replaced `mkdocs gh-deploy` with `actions/upload-pages-artifact` + `actions/deploy-pages`.
