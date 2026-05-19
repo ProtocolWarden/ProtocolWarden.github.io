@@ -6,12 +6,20 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,19 +32,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build and deploy
-        run: mkdocs gh-deploy --force
+      - name: Build
+        run: mkdocs build --strict
 
-      - name: Ensure Pages source is gh-pages branch
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          SOURCE=$(gh api repos/${{ github.repository }}/pages --jq '.source.branch' 2>/dev/null || echo "unknown")
-          if [ "$SOURCE" != "gh-pages" ]; then
-            echo "Pages source is '$SOURCE', correcting to gh-pages..."
-            gh api --method PUT repos/${{ github.repository }}/pages --input - <<'EOF'
-          {"source": "gh-pages"}
-          EOF
-          else
-            echo "Pages source is already gh-pages — no action needed."
-          fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -3,6 +3,13 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-19 — Switch to Actions-native Pages deployment (permanent fix)
+
+- Replaced `mkdocs gh-deploy` with `actions/upload-pages-artifact` + `actions/deploy-pages`.
+- Set Pages `build_type=workflow` via API — branch source setting is now irrelevant; can never revert to Jekyll/main silently.
+- Added `--strict` to `mkdocs build` so nav/link errors fail CI rather than deploying broken pages.
+- Permissions: `contents: read`, `pages: write`, `id-token: write`; `concurrency: group: pages`.
+
 ## 2026-05-19 — Fix Pages source reverting to main
 
 - Root cause: GitHub Pages was configured to serve from `main` branch (legacy Jekyll build), not from `gh-pages` where `mkdocs gh-deploy` puts the built HTML.
