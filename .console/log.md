@@ -66,3 +66,14 @@ _Free-form scratch. Clear periodically — old entries can be deleted once no lo
 
 - Added CLAUDE.md to .gitignore
 - Added .custodian/tmp*.yaml to exclude custodian audit temp files
+
+## 2026-05-18 — ADR 0005: retire kodo/Archon, add owned executor docs
+
+- `docs/overview/ecosystem-role-matrix.md`: replaced "External Backend Layer" row with "Execution Backend Layer" (TeamExecutor/DagExecutor/CritiqueExecutor) and "External Layer" (remaining third-party integrations); added ADR 0005 note linking to new repo pages.
+- `docs/governance/external-integrations.md`: removed kodo/Archon from active integrations table; added "Retired forks" section linking to replacement repos.
+- `docs/repos/external-integrations.md`: same — removed kodo/Archon from examples, added retired forks note.
+- Created `docs/repos/teamexecutor.md` — coordinator/worker/verifier pattern, replaces kodo.
+- Created `docs/repos/dagexecutor.md` — rustworkx DAG, 5 node types, replaces Archon.
+- Created `docs/repos/critiqueexecutor.md` — adversarial/reflexion critique loops, new capability.
+- `mkdocs.yml`: added TeamExecutor, DagExecutor, CritiqueExecutor nav entries under Repos.
+- `mkdocs build` clean (one pre-existing README.md/index.md warning, not from these changes).

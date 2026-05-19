@@ -8,14 +8,19 @@ story exists for them.
 
 | Repo | Role | Notes |
 | --- | --- | --- |
-| Archon | external integration | candidate capability source |
 | firecrawl | external integration | candidate backend / crawl integration |
-| kodo | external integration | candidate backend or forked dependency |
 | PraisonAI | external integration | candidate backend or orchestration input |
 | Wan2GP | external integration | candidate capability source |
 | openclaw | external integration | candidate integration surface |
 | Zonos-API | external integration | candidate backend API |
 | neuro-game-sdk | external integration | candidate capability source |
+
+## Retired forks (ADR 0005, 2026-05-18)
+
+| Repo | Replaced by | Notes |
+| --- | --- | --- |
+| kodo | [TeamExecutor](../repos/teamexecutor.md) | team coordination role absorbed into owned executor |
+| Archon | [DagExecutor](../repos/dagexecutor.md) | DAG workflow role absorbed into owned executor |
 
 ## Rules
 
