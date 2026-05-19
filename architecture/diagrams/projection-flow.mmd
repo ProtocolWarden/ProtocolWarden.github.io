@@ -1,0 +1,9 @@
+graph LR
+    PrivateTruth[Private truth]
+    ProjectionRules[PlatformManifest projection rules]
+    PublicSafe[Public-safe projection]
+    Custodian[Custodian validation]
+
+    PrivateTruth --> ProjectionRules
+    ProjectionRules --> PublicSafe
+    PublicSafe --> Custodian
