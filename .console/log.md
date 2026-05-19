@@ -77,3 +77,10 @@ _Free-form scratch. Clear periodically — old entries can be deleted once no lo
 - Created `docs/repos/critiqueexecutor.md` — adversarial/reflexion critique loops, new capability.
 - `mkdocs.yml`: added TeamExecutor, DagExecutor, CritiqueExecutor nav entries under Repos.
 - `mkdocs build` clean (one pre-existing README.md/index.md warning, not from these changes).
+
+## 2026-05-18 — Doc loop 2: wire executors into topology and architecture docs
+
+- `docs/architecture/execution-flow.md`: updated sequenceDiagram to show ExecutionBackend layer with note; added backend table (TeamExecutor/DagExecutor/CritiqueExecutor/ExecutorRuntime).
+- `docs/topology/execution-routing.md`: expanded main path to name all backends; added Backend selection section.
+- `docs/topology/control-plane.md`: added "Execution backend layer" section for TE/DE/CE with clarification they are not control-plane components.
+- `docs/topology/ecosystem-graph.md`: added TE/DE/CE nodes with OPS→TE/DE/CE and TE/DE/CE→CX/RX edges.
