@@ -84,3 +84,7 @@ _Free-form scratch. Clear periodically — old entries can be deleted once no lo
 - `docs/topology/execution-routing.md`: expanded main path to name all backends; added Backend selection section.
 - `docs/topology/control-plane.md`: added "Execution backend layer" section for TE/DE/CE with clarification they are not control-plane components.
 - `docs/topology/ecosystem-graph.md`: added TE/DE/CE nodes with OPS→TE/DE/CE and TE/DE/CE→CX/RX edges.
+
+## 2026-05-19 — Fix DAGExecutor capitalization in dagexecutor.md
+
+Corrected DagExecutor → DAGExecutor in docs/repos/dagexecutor.md (repo name and GitHub link).
