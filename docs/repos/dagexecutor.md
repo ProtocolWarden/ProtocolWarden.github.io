@@ -24,8 +24,8 @@ DAGExecutor drives multi-node AI task graphs with topological scheduling and con
 
 `worker_backend` selects the CLI used for agent nodes:
 
-- `claude_code` (default) — `claude --message … --output-format json --no-auto-commits`
-- `codex_cli` — `codex --model … --approval-mode full-auto -q …`
+- claude_code (default) — `claude --message … --output-format json --no-auto-commits`
+- codex_cli — `codex --model … --approval-mode full-auto -q …`
 
 Agent node commands are built as `list[str]` directly — no shell quoting or string construction.
 

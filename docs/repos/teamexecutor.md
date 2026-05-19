@@ -29,8 +29,8 @@ Each `GoalStage` supports optional primitives that compose to build safe, verifi
 
 `worker_backend` selects the CLI used for worker and verifier subprocesses:
 
-- `claude_code` (default) — `claude --message … --output-format json`
-- `codex_cli` — `codex --approval-mode full-auto -q …`
+- claude_code (default) — `claude --message … --output-format json`
+- codex_cli — `codex --approval-mode full-auto -q …`
 
 Backend is propagated from the SwitchBoard `LaneDecision.metadata["worker_backend"]` → OperationsCenter adapter → TeamExecutor.
 

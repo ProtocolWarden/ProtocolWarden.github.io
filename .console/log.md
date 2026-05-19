@@ -3,6 +3,10 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-19 — Fix custodian K1 in executor docs (worker_backend values)
+
+- Removed backticks from `claude_code` and `codex_cli` values in worker_backend bullet lists across teamexecutor.md, dagexecutor.md, and critiqueexecutor.md — custodian K1 reads backtick-quoted strings as src symbol references.
+
 ## 2026-05-19 — Sync executor repo docs to current implementation
 
 - teamexecutor.md: added Primitives 1–4 table (persist_changes/QuickCheck/adaptive advisor/auto_commit), worker_backend section (claude_code/codex_cli), CoreRunner subprocess safety section, corrected coordinator from "Anthropic API" to "Claude Code subprocess", added CoreRunner dependency.

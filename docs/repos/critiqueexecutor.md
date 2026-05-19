@@ -17,8 +17,8 @@ CritiqueExecutor runs iterative critique loops for AI task refinement.
 
 `worker_backend` selects the CLI used for proposer/agent subprocesses:
 
-- `claude_code` (default) — `claude --message … --no-auto-commits --output-format json`
-- `codex_cli` — `codex --approval-mode full-auto -q …`
+- claude_code (default) — `claude --message … --no-auto-commits --output-format json`
+- codex_cli — `codex --approval-mode full-auto -q …`
 
 The critic always receives only the prompt and verdict JSON — never the backend identity.
 
