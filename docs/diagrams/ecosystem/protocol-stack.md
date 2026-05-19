@@ -15,7 +15,7 @@ graph TD
         SB[SwitchBoard]
     end
     subgraph runtime ["Runtime Layer"]
-        ER[ExecutorRuntime\nsubprocess mechanics library]
+        ER[CoreRunner\nsubprocess mechanics library]
         BE[TeamExecutor / DAGExecutor / CritiqueExecutor\nAI execution backends]
     end
 

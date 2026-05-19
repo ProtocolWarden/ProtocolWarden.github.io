@@ -12,7 +12,7 @@ graph TD
     SB[SwitchBoard]
     CX[CxRP]
     RX[RxP]
-    ER[ExecutorRuntime]
+    ER[CoreRunner]
     CU[Custodian]
     WS[PlatformDeployment]
     SR[SourceRegistry]

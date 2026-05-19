@@ -59,7 +59,7 @@ graph TD
         OPS[OperationsCenter]
         SB[SwitchBoard]
         OC[OperatorConsole]
-        ER[ExecutorRuntime]
+        ER[CoreRunner]
     end
     subgraph gov ["Governance / Lifecycle Layer"]
         CU[Custodian]
@@ -82,7 +82,7 @@ graph LR
     SB[SwitchBoard]
     CX[CxRP]
     RX[RxP]
-    ER[ExecutorRuntime]
+    ER[CoreRunner]
     RG[RepoGraph]
     PM[PlatformManifest]
     PT[Private truth layer]
@@ -111,7 +111,7 @@ graph LR
 - `RxP` owns runtime invocation semantics
 - `OperationsCenter` owns orchestration and governance behavior
 - `SwitchBoard` owns lane and backend selection
-- `ExecutorRuntime` owns runtime invocation mechanics
+- `CoreRunner` owns runtime invocation mechanics
 - `RepoGraph` owns the shared ontology, topology, projection, and boundary language
 - `PlatformManifest` publishes the public graph instance and public-safe projections
 - the private-truth layer supplies private graph truth in that language
@@ -126,7 +126,7 @@ For a short operator model, see
 
 - **Contracts:** CxRP, RxP
 - **Control plane:** OperatorConsole, OperationsCenter, SwitchBoard
-- **Runtime layer:** ExecutorRuntime, adjacent backend consumers, managed backends
+- **Runtime layer:** CoreRunner, adjacent backend consumers, managed backends
 - **Inventory and governance:** PlatformManifest, Custodian, SourceRegistry, PlatformDeployment
 - **Utility tooling:** Warehouse
 

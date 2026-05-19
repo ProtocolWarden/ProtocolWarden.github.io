@@ -3,6 +3,14 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-19 — CoreRunner rename + consolidation docs (ADR 0006)
+
+- ExecutorRuntime → CoreRunner across all docs (repos/executorruntime.md renamed to repos/corerunner.md; mkdocs.yml nav updated; global sed across 14 pages).
+- Expanded scope: CoreRunner now documented as the subprocess safety layer for ALL backends (TE/DE/CE use core_runner.safe_run(); direct_local/aider_local use CoreRunner.run() RxP path).
+- Ecosystem graph updated: TE/DE/CE now show edges to CoreRunner via safe_run.
+- Role matrix layer renamed to "Subprocess Safety Layer" with correct scope.
+- ADR 0006 work order written in OC/docs/architecture/adr/0006-corerunner-subprocess-consolidation.md — 6-phase plan covering extract safe_run(), wire TE/DE/CE, rename all refs, GitHub repo rename.
+
 ## 2026-05-19 — Restore docs/README.md (custodian R6)
 
 - Restoring docs/README.md after accidental deletion. Custodian R6 requires it as a docs/ tree index. MkDocs excludes it from the built site (index.md takes precedence) but that's a warning-only, not a build error.

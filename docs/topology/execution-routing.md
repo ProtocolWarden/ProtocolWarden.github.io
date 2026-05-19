@@ -24,8 +24,8 @@ For simpler single-agent tasks, OperationsCenter dispatches to:
 - **DirectLocal** — spawns claude CLI directly in the managed project workspace
 - **AiderLocal** — spawns aider CLI directly in the managed project workspace
 
-Both use **ExecutorRuntime** as their subprocess mechanics substrate (process-group-safe
-execution, timeout, stdout/stderr capture). ExecutorRuntime is a library, not a
+Both use **CoreRunner** as their subprocess mechanics substrate (process-group-safe
+execution, timeout, stdout/stderr capture). CoreRunner is a library, not a
 peer execution backend.
 
 ## Backend selection

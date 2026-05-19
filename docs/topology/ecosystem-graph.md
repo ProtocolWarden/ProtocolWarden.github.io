@@ -8,7 +8,7 @@ graph TD
     SB[SwitchBoard]
     CX[CxRP]
     RX[RxP]
-    ER[ExecutorRuntime\nsubprocess substrate]
+    CR[CoreRunner\nsubprocess safety layer]
     TE[TeamExecutor]
     DE[DAGExecutor]
     CE[CritiqueExecutor]
@@ -30,7 +30,7 @@ graph TD
     OPS --> SB
     OPS --> CX
     OPS --> RX
-    OPS -->|direct_local / aider_local adapters| ER
+    OPS -->|direct_local / aider_local| CR
     OPS --> TE
     OPS --> DE
     OPS --> CE
@@ -38,6 +38,9 @@ graph TD
     OPS --> PT
     OPS --> SR
     OPS --> CU
+    TE -->|safe_run| CR
+    DE -->|safe_run| CR
+    CE -->|safe_run| CR
     TE --> CX
     TE --> RX
     DE --> CX
@@ -48,6 +51,6 @@ graph TD
     WH --> OPS
 ```
 
-ExecutorRuntime is a subprocess mechanics library — not a peer AI execution backend.
-It is used by OC's `direct_local` and `aider_local` adapters only.
-TeamExecutor, DAGExecutor, and CritiqueExecutor do not use it.
+CoreRunner is the canonical subprocess safety library for all backends.
+OC's `direct_local` and `aider_local` use `CoreRunner.run()` (full RxP path).
+TeamExecutor, DAGExecutor, and CritiqueExecutor use `core_runner.safe_run()` (lightweight primitive).

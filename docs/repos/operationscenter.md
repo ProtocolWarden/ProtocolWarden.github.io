@@ -28,7 +28,7 @@ Orchestration and runtime coordination for the ProtocolWarden control plane.
 - CxRP
 - RxP
 - SwitchBoard
-- ExecutorRuntime *(via direct_local / aider_local adapters)*
+- CoreRunner *(via direct_local / aider_local adapters)*
 - TeamExecutor
 - DAGExecutor
 - CritiqueExecutor

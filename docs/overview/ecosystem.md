@@ -38,7 +38,7 @@ without collapsing all semantics into one repository.
 - OperatorConsole
 - OperationsCenter
 - SwitchBoard
-- ExecutorRuntime *(subprocess mechanics library used by direct_local / aider_local OC adapters)*
+- CoreRunner *(subprocess mechanics library used by direct_local / aider_local OC adapters)*
 
 ### AI Execution Backends
 

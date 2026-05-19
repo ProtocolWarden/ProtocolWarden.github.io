@@ -9,7 +9,7 @@ graph LR
     SB[SwitchBoard]
     CX[CxRP]
     RX[RxP]
-    ER[ExecutorRuntime]
+    ER[CoreRunner]
     RG[RepoGraph]
     PM[PlatformManifest]
     PT[Private truth layer]

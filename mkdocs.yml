@@ -120,7 +120,7 @@ nav:
       - SwitchBoard: repos/switchboard.md
       - CxRP: repos/cxrp.md
       - RxP: repos/rxp.md
-      - ExecutorRuntime: repos/executorruntime.md
+      - CoreRunner: repos/corerunner.md
       - Custodian: repos/custodian.md
       - PlatformManifest: repos/platformmanifest.md
       - SourceRegistry: repos/sourceregistry.md

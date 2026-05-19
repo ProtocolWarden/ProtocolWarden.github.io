@@ -35,7 +35,7 @@ Expected source repos for extraction:
 - `PlatformManifest`
 - `private-truth layer`
 - `Custodian`
-- `ExecutorRuntime`
+- `CoreRunner`
 - `SwitchBoard`
 - managed private projects
 - `SourceRegistry`
@@ -64,7 +64,7 @@ Replace the current high-level repo pages with repo-derived material for:
 - `PlatformManifest`
 - `private-truth layer`
 - `Custodian`
-- `ExecutorRuntime`
+- `CoreRunner`
 - `SwitchBoard`
 - managed private projects
 

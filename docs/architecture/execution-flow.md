@@ -15,7 +15,7 @@ sequenceDiagram
     OPS->>SB: route proposal using CxRP
     SB-->>OPS: lane decision (backend_name, worker_backend)
     OPS->>BE: dispatch to backend adapter
-    note over BE: TeamExecutor / DAGExecutor / CritiqueExecutor<br/>— or —<br/>DirectLocal / AiderLocal (via ExecutorRuntime subprocess layer)
+    note over BE: TeamExecutor / DAGExecutor / CritiqueExecutor<br/>— or —<br/>DirectLocal / AiderLocal (via CoreRunner subprocess layer)
     BE->>MP: execute workflow or agent topology
     MP-->>BE: artifacts and reports
     BE-->>OPS: normalized ExecutionResult
@@ -39,15 +39,15 @@ All three call the Claude Code or Codex CLI via subprocess internally
 
 For simpler single-agent tasks, OperationsCenter uses its `direct_local` and
 `aider_local` adapters. These delegate subprocess mechanics to
-**ExecutorRuntime** — a library that provides process-group-safe child process
+**CoreRunner** — a library that provides process-group-safe child process
 execution, timeout enforcement, and stdout/stderr capture to files.
 
 ```
-DirectLocalBackendAdapter → ExecutorRuntime.run() → SubprocessRunner → claude CLI
-AiderLocalBackendAdapter  → ExecutorRuntime.run() → SubprocessRunner → aider CLI
+DirectLocalBackendAdapter → CoreRunner.run() → SubprocessRunner → claude CLI
+AiderLocalBackendAdapter  → CoreRunner.run() → SubprocessRunner → aider CLI
 ```
 
-ExecutorRuntime is not an AI execution backend; it is a subprocess mechanics
+CoreRunner is not an AI execution backend; it is a subprocess mechanics
 library shared by those two adapters.
 
 ## worker_backend propagation

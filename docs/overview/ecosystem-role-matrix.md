@@ -11,7 +11,7 @@ This matrix is the fast answer to “what owns what?” for the public ecosystem
 | Control Plane Layer | planning and orchestration consumer | `OperationsCenter` |
 | Routing Policy Layer | lane and backend selection | `SwitchBoard` |
 | Operator Entry Layer | operator workspace and command surface | `OperatorConsole` |
-| Subprocess Mechanics Layer | process-group-safe subprocess execution for direct/aider adapters | `ExecutorRuntime` |
+| Subprocess Safety Layer | process-group-safe subprocess primitive for all backends + RxP invocation dispatcher for direct/aider adapters | `CoreRunner` |
 | Governance / Audit Layer | boundary, drift, and catalog enforcement | `Custodian` |
 | Deployment / Local Runtime Layer | environment assembly and convenience wrappers | `PlatformDeployment` |
 | Source Lifecycle Layer | source and fork inventory | `SourceRegistry` |
