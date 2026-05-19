@@ -3,6 +3,16 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-19 — Fix custodian K1 in executor docs (worker_backend values)
+
+- Removed backticks from `claude_code` and `codex_cli` values in worker_backend bullet lists across teamexecutor.md, dagexecutor.md, and critiqueexecutor.md — custodian K1 reads backtick-quoted strings as src symbol references.
+
+## 2026-05-19 — Sync executor repo docs to current implementation
+
+- teamexecutor.md: added Primitives 1–4 table (persist_changes/QuickCheck/adaptive advisor/auto_commit), worker_backend section (claude_code/codex_cli), CoreRunner subprocess safety section, corrected coordinator from "Anthropic API" to "Claude Code subprocess", added CoreRunner dependency.
+- dagexecutor.md: expanded node type table, added worker_backend section, subprocess safety section (safe_run, no shell=True), added CoreRunner dependency.
+- critiqueexecutor.md: added worker_backend section, subprocess safety section (timed_out handling), added CoreRunner dependency.
+
 ## 2026-05-19 — ADR 0006 complete: remove rename-in-progress banner from corerunner.md
 
 Rename is fully landed (all 6 phases merged). Removed the "Rename in progress" admonition from docs/repos/corerunner.md.
