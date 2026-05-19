@@ -3,6 +3,11 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-19 — Fix custodian findings after CoreRunner rename
+
+- Deleted docs/repos/executorruntime.md (orphaned after rename to corerunner.md — DC7).
+- Removed backtick-quoted adapter names from ecosystem-graph prose (custodian K1 read them as src symbols).
+
 ## 2026-05-19 — CoreRunner rename + consolidation docs (ADR 0006)
 
 - ExecutorRuntime → CoreRunner across all docs (repos/executorruntime.md renamed to repos/corerunner.md; mkdocs.yml nav updated; global sed across 14 pages).
