@@ -15,7 +15,7 @@ sequenceDiagram
     OPS->>SB: route proposal using CxRP
     SB-->>OPS: lane decision (backend_name)
     OPS->>BE: dispatch using RxP
-    note over BE: TeamExecutor / DagExecutor / CritiqueExecutor / ExecutorRuntime
+    note over BE: TeamExecutor / DAGExecutor / CritiqueExecutor / ExecutorRuntime
     BE->>MP: execute workflow or agent topology
     MP-->>BE: artifacts and reports
     BE-->>OPS: normalized runtime result
@@ -27,6 +27,6 @@ sequenceDiagram
 | Backend | Pattern | Primary use |
 |---------|---------|-------------|
 | TeamExecutor | Coordinator → workers → verifier | Team topology, parallel agent tasks |
-| DagExecutor | DAG with concurrent layer execution | Structured multi-step workflows |
+| DAGExecutor | DAG with concurrent layer execution | Structured multi-step workflows |
 | CritiqueExecutor | Adversarial proposer/critic or Reflexion | Quality-gated tasks, adversarial review |
 | ExecutorRuntime | Managed project via RxP | Direct-local execution, single-agent tasks |

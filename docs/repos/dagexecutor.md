@@ -1,12 +1,12 @@
-# DagExecutor
+# DAGExecutor
 
 **Role:** Owned execution backend — DAG-based workflow executor
-**GitHub:** [ProtocolWarden/DagExecutor](https://github.com/ProtocolWarden/DagExecutor)
+**GitHub:** [ProtocolWarden/DAGExecutor](https://github.com/ProtocolWarden/DAGExecutor)
 **License:** AGPL-3.0-or-later
 
 ## What It Does
 
-DagExecutor drives multi-node AI task graphs with topological scheduling and concurrent layer execution.
+DAGExecutor drives multi-node AI task graphs with topological scheduling and concurrent layer execution.
 
 **Node types:** `agent` (Claude Code subprocess), `bash` (shell), `script` (file-based), `loop` (static poll or dynamic fan-out), `gate` (human file-based approval)
 

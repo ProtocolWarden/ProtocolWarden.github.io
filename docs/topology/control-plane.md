@@ -16,7 +16,7 @@ The control plane is the part of the ecosystem that plans, routes, and governs.
 Owned executors dispatched by OperationsCenter (post ADR 0005):
 
 - TeamExecutor
-- DagExecutor
+- DAGExecutor
 - CritiqueExecutor
 
 These are not control-plane components; they receive dispatch and return

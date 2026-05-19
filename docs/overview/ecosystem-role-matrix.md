@@ -16,10 +16,10 @@ This matrix is the fast answer to “what owns what?” for the public ecosystem
 | Deployment / Local Runtime Layer | environment assembly and convenience wrappers | `PlatformDeployment` |
 | Source Lifecycle Layer | source and fork inventory | `SourceRegistry` |
 | Context Staging Layer | LLM-ready packaging and staging | `Warehouse` |
-| Execution Backend Layer | owned AI task executors | `TeamExecutor`, `DagExecutor`, `CritiqueExecutor` |
+| Execution Backend Layer | owned AI task executors | `TeamExecutor`, `DAGExecutor`, `CritiqueExecutor` |
 | External Layer | forked dependencies and third-party integrations | `firecrawl`, `openclaw`, `PraisonAI`, `Wan2GP`, `Zonos-API`, `neuro-game-sdk` |
 
-> **ADR 0005 (2026-05-18):** `kodo` (→ TeamExecutor) and `Archon` (→ DagExecutor) retired as external forks. See [TeamExecutor](../repos/teamexecutor.md), [DagExecutor](../repos/dagexecutor.md), [CritiqueExecutor](../repos/critiqueexecutor.md).
+> **ADR 0005 (2026-05-18):** `kodo` (→ TeamExecutor) and `Archon` (→ DAGExecutor) retired as external forks. See [TeamExecutor](../repos/teamexecutor.md), [DAGExecutor](../repos/dagexecutor.md), [CritiqueExecutor](../repos/critiqueexecutor.md).
 
 ## Boundary reminder
 

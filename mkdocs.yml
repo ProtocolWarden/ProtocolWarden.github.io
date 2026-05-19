@@ -128,7 +128,7 @@ nav:
       - PlatformDeployment: repos/platformdeployment.md
       - Warehouse: repos/warehouse.md
       - TeamExecutor: repos/teamexecutor.md
-      - DagExecutor: repos/dagexecutor.md
+      - DAGExecutor: repos/dagexecutor.md
       - CritiqueExecutor: repos/critiqueexecutor.md
       - External Integrations: repos/external-integrations.md
   - Diagrams:

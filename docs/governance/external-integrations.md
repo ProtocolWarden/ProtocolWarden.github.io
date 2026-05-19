@@ -20,7 +20,7 @@ story exists for them.
 | Repo | Replaced by | Notes |
 | --- | --- | --- |
 | kodo | [TeamExecutor](../repos/teamexecutor.md) | team coordination role absorbed into owned executor |
-| Archon | [DagExecutor](../repos/dagexecutor.md) | DAG workflow role absorbed into owned executor |
+| Archon | [DAGExecutor](../repos/dagexecutor.md) | DAG workflow role absorbed into owned executor |
 
 ## Rules
 

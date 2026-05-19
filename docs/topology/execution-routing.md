@@ -10,7 +10,7 @@ selection.
 - OperationsCenter binds runtime and capability context
 - An owned execution backend performs invocation:
   - **TeamExecutor** — coordinator/worker/verifier pattern for team topology tasks
-  - **DagExecutor** — rustworkx DAG with concurrent layer execution for structured workflows
+  - **DAGExecutor** — rustworkx DAG with concurrent layer execution for structured workflows
   - **CritiqueExecutor** — adversarial (proposer+critic) and reflexion modes for quality-gated tasks
   - **ExecutorRuntime** — managed project workflow via RxP for direct-local execution
 

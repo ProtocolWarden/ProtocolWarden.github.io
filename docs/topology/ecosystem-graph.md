@@ -10,7 +10,7 @@ graph TD
     RX[RxP]
     ER[ExecutorRuntime]
     TE[TeamExecutor]
-    DE[DagExecutor]
+    DE[DAGExecutor]
     CE[CritiqueExecutor]
     RG[RepoGraph]
     PM[PlatformManifest]

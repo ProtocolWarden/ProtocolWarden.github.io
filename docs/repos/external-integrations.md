@@ -22,7 +22,7 @@ ProtocolWarden semantic authority.
 ## Retired forks (ADR 0005, 2026-05-18)
 
 - **kodo** — retired; replaced by [TeamExecutor](teamexecutor.md)
-- **Archon** — retired; replaced by [DagExecutor](dagexecutor.md)
+- **Archon** — retired; replaced by [DAGExecutor](dagexecutor.md)
 
 ## Rule
 
