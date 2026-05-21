@@ -3,6 +3,12 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-21 — Add ContextLifecycleProtocol to repo catalog
+
+Added docs/repos/contextlifecycleprotocol.md (new CLP repo page).
+Added CLP to catalog index. Also added TeamExecutor, DAGExecutor, CritiqueExecutor to index
+— they were in the platform manifest but missing from the catalog table.
+
 ## 2026-05-19 — Fix custodian K1 in executor docs (worker_backend values)
 
 - Removed backticks from `claude_code` and `codex_cli` values in worker_backend bullet lists across teamexecutor.md, dagexecutor.md, and critiqueexecutor.md — custodian K1 reads backtick-quoted strings as src symbol references.

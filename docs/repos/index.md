@@ -19,6 +19,10 @@ does not do.
 | [PlatformDeployment](platformdeployment.md) | deployment_runtime | runtime glue and local/CI ergonomics |
 | [SourceRegistry](sourceregistry.md) | source_lifecycle | source and fork inventory |
 | [Warehouse](warehouse.md) | context_staging | LLM-ready packaging and staging |
+| [ContextLifecycleProtocol](contextlifecycleprotocol.md) | cognition_lifecycle | generic configurable cognition lifecycle runtime — bounded, resumable agent sessions |
+| [TeamExecutor](teamexecutor.md) | execution_backend | coordinator/worker/verifier team execution |
+| [DAGExecutor](dagexecutor.md) | execution_backend | DAG workflow executor (rustworkx) |
+| [CritiqueExecutor](critiqueexecutor.md) | execution_backend | adversarial and reflexion critique loops |
 
 ## Adjacent surfaces
 
