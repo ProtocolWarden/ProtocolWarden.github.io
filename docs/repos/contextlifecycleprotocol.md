@@ -26,7 +26,7 @@ It provides:
 ## Consuming repos
 
 - **OperationsCenter** — watchdog loop checkpointing, investigation worker dispatch
-- **VideoFoundry** — audit sitter capsules, gate remediation handoffs
+- Private project repos — audit sitter capsules, gate remediation handoffs (tracked in project-level manifests)
 
 ## Boundary
 

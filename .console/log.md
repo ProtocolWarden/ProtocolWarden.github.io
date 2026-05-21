@@ -3,6 +3,11 @@
 _Chronological continuity log. Decisions, stop points, what changed and why._
 _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
+## 2026-05-21 — Fix B1 boundary violation in contextlifecycleprotocol.md
+
+Removed VideoFoundry (private) from "Consuming repos" section. Custodian B1 caught it on pre-push.
+Replaced with generic "Private project repos" — public catalog cannot name private repos.
+
 ## 2026-05-21 — Add ContextLifecycleProtocol to repo catalog
 
 Added docs/repos/contextlifecycleprotocol.md (new CLP repo page).
