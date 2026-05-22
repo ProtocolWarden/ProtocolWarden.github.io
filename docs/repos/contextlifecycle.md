@@ -1,4 +1,4 @@
-# ContextLifecycleProtocol
+# ContextLifecycle
 
 ## Mission
 
@@ -6,7 +6,7 @@ Generic configurable cognition lifecycle runtime for bounded, resumable agent se
 
 ## What it does
 
-ContextLifecycleProtocol solves the problem of operational agent loops becoming immortal cognition sinks — accumulating context, running forever, and decaying in instruction fidelity over time.
+ContextLifecycle solves the problem of operational agent loops becoming immortal cognition sinks — accumulating context, running forever, and decaying in instruction fidelity over time.
 
 It provides:
 
@@ -47,6 +47,6 @@ checkpoints  = let the system survive without immortal sessions
 
 ## Links
 
-- [GitHub](https://github.com/ProtocolWarden/ContextLifecycleProtocol)
-- [Adoption guide](https://github.com/ProtocolWarden/ContextLifecycleProtocol/blob/main/docs/adopting.md)
-- [Philosophy](https://github.com/ProtocolWarden/ContextLifecycleProtocol/blob/main/docs/philosophy.md)
+- [GitHub](https://github.com/ProtocolWarden/ContextLifecycle)
+- [Adoption guide](https://github.com/ProtocolWarden/ContextLifecycle/blob/main/docs/adopting.md)
+- [Philosophy](https://github.com/ProtocolWarden/ContextLifecycle/blob/main/docs/philosophy.md)
