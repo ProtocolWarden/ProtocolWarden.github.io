@@ -42,6 +42,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+# docs/README.md is repo-facing only; index.md is the rendered home page.
+exclude_docs: |
+  README.md
 plugins:
   - search
 nav:
@@ -70,6 +73,8 @@ nav:
       - Artifact Flow: architecture/artifact-flow.md
       - Observability Model: architecture/observability-model.md
       - Topology Model: architecture/topology-model.md
+      - Sync & Data Transport: architecture/sync-and-data-transport.md
+      - Spec Director Refactor: architecture/spec-director-refactor.md
       - Stable Baselines:
           - RepoGraph Post-PASS Hardening: architecture/stable-baselines/repograph-post-pass-hardening-v1.md
   - Ontology:
@@ -115,6 +120,7 @@ nav:
       - Overview: contracts/index.md
   - Repos:
       - Overview: repos/index.md
+      - ContextLifecycle: repos/contextlifecycle.md
       - RepoGraph: repos/repograph.md
       - OperationsCenter: repos/operationscenter.md
       - SwitchBoard: repos/switchboard.md
