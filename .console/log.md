@@ -156,3 +156,10 @@ _Free-form scratch. Clear periodically — old entries can be deleted once no lo
 ## 2026-05-19 — Fix DAGExecutor capitalization in dagexecutor.md
 
 Corrected DagExecutor → DAGExecutor in docs/repos/dagexecutor.md (repo name and GitHub link).
+
+## 2026-05-23 — Add Sync & Data Transport + Spec Director Refactor pages
+
+- `docs/architecture/sync-and-data-transport.md` — public mirror of the manifest-as-sync-authority model (mermaid diagram, repos table, sync modes, invariants). Canonical lives in PlatformDeployment ADR 0004.
+- `docs/architecture/spec-director-refactor.md` — ported OC ADR 0007 diagram/decision to the site (no web page existed for it). Mermaid flowchart + invariants.
+- `mkdocs.yml`: added both under Architecture nav. `mkdocs build` clean; only pre-existing warnings (README/index conflict, repos/contextlifecycle.md orphan) — not from these changes.
+- Genericized private fleet-layer name out of sync-and-data-transport.md (drop_from_public decision); referenced functionally as "private fleet layer". Added ContextLifecycle to Repos nav (was orphan) and `exclude_docs: README.md`; `mkdocs build --strict` now clean.
