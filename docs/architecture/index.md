@@ -19,6 +19,8 @@ Start with the [Platform Architecture Charter](platform-architecture-charter.md)
 - [Audit Architecture](audit-architecture.md)
 - [Observability Model](observability-model.md)
 - [Topology Model](topology-model.md)
+- [Sync & Data Transport](sync-and-data-transport.md)
+- [Spec Director Refactor](spec-director-refactor.md)
 
 ## Stable Baselines
 
