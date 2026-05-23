@@ -163,3 +163,7 @@ Corrected DagExecutor → DAGExecutor in docs/repos/dagexecutor.md (repo name an
 - `docs/architecture/spec-director-refactor.md` — ported OC ADR 0007 diagram/decision to the site (no web page existed for it). Mermaid flowchart + invariants.
 - `mkdocs.yml`: added both under Architecture nav. `mkdocs build` clean; only pre-existing warnings (README/index conflict, repos/contextlifecycle.md orphan) — not from these changes.
 - Genericized private fleet-layer name out of sync-and-data-transport.md (drop_from_public decision); referenced functionally as "private fleet layer". Added ContextLifecycle to Repos nav (was orphan) and `exclude_docs: README.md`; `mkdocs build --strict` now clean.
+
+## 2026-05-23 — Fix: commit architecture index links
+
+- index.md links to Sync & Data Transport + Spec Director Refactor were left uncommitted in PR #5 (omitted from git add); landing them now so the pages are linked from a tracked doc (DC7).
