@@ -4,12 +4,12 @@ The ecosystem is easiest to understand as layered responsibilities.
 
 ```mermaid
 graph TD
-    DOCS[Public Documentation Layer\nProtocolWarden.github.io]
-    GOV[Governance and Inventory Layer\nPlatformManifest / private topology repos / Custodian / SourceRegistry]
-    PROTO[Protocol Layer\nCxRP / RxP]
-    CTRL[Control Plane\nOperatorConsole / OperationsCenter / SwitchBoard]
-    RUN[Runtime and Managed Projects\nTeamExecutor / DAGExecutor / CritiqueExecutor / DirectLocal+AiderLocal(via CoreRunner)]
-    HOST[Deployment and Hosting\nPlatformDeployment]
+    DOCS["Public Documentation Layer<br/>ProtocolWarden.github.io"]
+    GOV["Governance and Inventory Layer<br/>PlatformManifest / private topology repos / Custodian / SourceRegistry"]
+    PROTO["Protocol Layer<br/>CxRP / RxP"]
+    CTRL["Control Plane<br/>OperatorConsole / OperationsCenter / SwitchBoard"]
+    RUN["Runtime and Managed Projects<br/>TeamExecutor / DAGExecutor / CritiqueExecutor / DirectLocal+AiderLocal (via CoreRunner)"]
+    HOST["Deployment and Hosting<br/>PlatformDeployment"]
 
     DOCS --> GOV
     GOV --> PROTO

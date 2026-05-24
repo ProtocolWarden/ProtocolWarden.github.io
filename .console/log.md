@@ -1,5 +1,15 @@
 # Log
 
+## 2026-05-23 — Fix Mermaid 11.x diagram syntax across docs
+
+Mermaid 11.15.0 is stricter: literal `\n` in node labels is not a line break, and
+labels with special chars (e.g. parens) are hard parse errors. Converted all `\n`
+to `<br/>` and wrapped affected labels in double quotes across 7 diagram files
+(layered-architecture, platform-architecture-charter, ecosystem-graph, layered-stack,
+projection, projection-flow, protocol-stack). Also quoted edge labels containing
+spaces/slashes. Scanned all other mermaid blocks for unquoted-paren node labels —
+none found (spec-director / sync already quoted). `mkdocs build --strict` passes.
+
 ## 2026-05-21 — Add closing fence to console-context block
 
 Added <!-- /console-context --> end marker so OperatorConsole only replaces its

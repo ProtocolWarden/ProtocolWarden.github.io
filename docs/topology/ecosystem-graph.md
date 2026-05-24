@@ -8,13 +8,13 @@ graph TD
     SB[SwitchBoard]
     CX[CxRP]
     RX[RxP]
-    CR[CoreRunner\nsubprocess safety layer]
+    CR["CoreRunner<br/>subprocess safety layer"]
     TE[TeamExecutor]
     DE[DAGExecutor]
     CE[CritiqueExecutor]
     RG[RepoGraph]
     PM[PlatformManifest]
-    PT[Private truth layer]
+    PT["Private truth layer"]
     CU[Custodian]
     WS[PlatformDeployment]
     WH[Warehouse]
@@ -30,7 +30,7 @@ graph TD
     OPS --> SB
     OPS --> CX
     OPS --> RX
-    OPS -->|direct_local / aider_local| CR
+    OPS -->|"direct_local / aider_local"| CR
     OPS --> TE
     OPS --> DE
     OPS --> CE
