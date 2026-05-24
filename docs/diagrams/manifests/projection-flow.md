@@ -4,24 +4,24 @@ Shows how private truth becomes a public-safe projection and how enforcement con
 
 ```mermaid
 graph TD
-    PT[Private truth layer\nprivate graph truth]
-    RG[RepoGraph\ngraph schema and semantics]
-    RULES[Projection rules\nvisibility and redaction]
-    PM[PlatformManifest\npublic-safe projection]
-    BA[Boundary artifact\nfrozen export]
-    CU[Custodian\nfail-closed verifier]
+    PT["Private truth layer<br/>private graph truth"]
+    RG["RepoGraph<br/>graph schema and semantics"]
+    RULES["Projection rules<br/>visibility and redaction"]
+    PM["PlatformManifest<br/>public-safe projection"]
+    BA["Boundary artifact<br/>frozen export"]
+    CU["Custodian<br/>fail-closed verifier"]
     OPS[OperationsCenter]
     OC[OperatorConsole]
     SB[SwitchBoard]
 
-    PT -->|private truth export| RULES
-    RG -->|schema and semantics| RULES
+    PT -->|"private truth export"| RULES
+    RG -->|"schema and semantics"| RULES
     RULES --> PM
     PM --> BA
     BA --> CU
-    CU -->|verified context| OPS
-    CU -->|verified context| OC
-    CU -->|verified context| SB
+    CU -->|"verified context"| OPS
+    CU -->|"verified context"| OC
+    CU -->|"verified context"| SB
 ```
 
 ## Rules

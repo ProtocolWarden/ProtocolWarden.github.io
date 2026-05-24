@@ -2,11 +2,11 @@
 
 ```mermaid
 graph TD
-    Private[Private truth layer\nprivate graph truth]
-    Rules[Projection Rules]
-    Public[PlatformManifest\npublic-safe projection]
-    Local[Local Manifest\nruntime-only overlay]
-    Custodian[Custodian]
+    Private["Private truth layer<br/>private graph truth"]
+    Rules["Projection Rules"]
+    Public["PlatformManifest<br/>public-safe projection"]
+    Local["Local Manifest<br/>runtime-only overlay"]
+    Custodian["Custodian"]
 
     Private --> Rules
     Rules --> Public

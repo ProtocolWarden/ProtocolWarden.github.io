@@ -201,14 +201,14 @@ OperationsCenter consumes composed manifest truth at runtime.
 
 ```mermaid
 graph TD
-    DOC[ProtocolWarden.github.io\nDocumentation + Charter]
-    RG[RepoGraph\nOntology + Topology + Projection Semantics]
-    PM[PlatformManifest\nPublic Graph Instance]
-    PRM[private-truth layer\nPrivate Graph Data]
-    PD[PlatformDeployment\nTopography + Local Deployment]
-    CUST[Custodian\nAudit + Drift Enforcement]
-    OC[OperationsCenter\nRuntime Consumer]
-    WH[Warehouse\nContext Packaging Utility]
+    DOC["ProtocolWarden.github.io<br/>Documentation + Charter"]
+    RG["RepoGraph<br/>Ontology + Topology + Projection Semantics"]
+    PM["PlatformManifest<br/>Public Graph Instance"]
+    PRM["private-truth layer<br/>Private Graph Data"]
+    PD["PlatformDeployment<br/>Topography + Local Deployment"]
+    CUST["Custodian<br/>Audit + Drift Enforcement"]
+    OC["OperationsCenter<br/>Runtime Consumer"]
+    WH["Warehouse<br/>Context Packaging Utility"]
 
     DOC --> RG
     DOC --> PM
@@ -230,12 +230,12 @@ graph TD
 
 ```mermaid
 graph TD
-    Semantics[RepoGraph\nShared semantics]
-    Platform[PlatformManifest\nPublic graph instance]
-    Private[private-truth layer\nPrivate graph superset]
-    Project[Project / WorkScope\nScoped overlays]
-    Local[PlatformDeployment LocalManifest\nTopography overlay]
-    Effective[EffectiveRepoGraph\nConsumed by OperationsCenter]
+    Semantics["RepoGraph<br/>Shared semantics"]
+    Platform["PlatformManifest<br/>Public graph instance"]
+    Private["private-truth layer<br/>Private graph superset"]
+    Project["Project / WorkScope<br/>Scoped overlays"]
+    Local["PlatformDeployment LocalManifest<br/>Topography overlay"]
+    Effective["EffectiveRepoGraph<br/>Consumed by OperationsCenter"]
 
     Semantics --> Platform
     Semantics --> Private
@@ -249,11 +249,11 @@ graph TD
 
 ```mermaid
 graph LR
-    PrivateTruth[private-truth layer truth]
-    ProjectionRules[RepoGraph projection rules]
-    PublicSafe[PlatformManifest public projection]
-    Boundary[RepoGraph boundary artifact]
-    Custodian[Custodian validation]
+    PrivateTruth["private-truth layer truth"]
+    ProjectionRules["RepoGraph projection rules"]
+    PublicSafe["PlatformManifest public projection"]
+    Boundary["RepoGraph boundary artifact"]
+    Custodian["Custodian validation"]
 
     PrivateTruth --> ProjectionRules
     ProjectionRules --> PublicSafe
