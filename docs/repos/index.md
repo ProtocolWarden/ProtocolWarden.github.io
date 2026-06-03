@@ -19,10 +19,11 @@ does not do.
 | [PlatformDeployment](platformdeployment.md) | deployment_runtime | runtime glue and local/CI ergonomics |
 | [SourceRegistry](sourceregistry.md) | source_lifecycle | source and fork inventory |
 | [Warehouse](warehouse.md) | context_staging | LLM-ready packaging and staging |
-| [ContextLifecycle](contextlifecycle.md) | cognition_lifecycle | generic configurable cognition lifecycle runtime — bounded, resumable agent sessions |
+| [ContextLifecycle](contextlifecycle.md) | cognition_lifecycle | bounded resumable agent sessions + context-injection tiered memory (warm/cold/consolidation) |
 | [TeamExecutor](teamexecutor.md) | execution_backend | coordinator/worker/verifier team execution |
 | [DAGExecutor](dagexecutor.md) | execution_backend | DAG workflow executor (rustworkx) |
 | [CritiqueExecutor](critiqueexecutor.md) | execution_backend | adversarial and reflexion critique loops |
+| [SyncMechanism](syncmechanism.md) | sync_transport | public-safe Syncthing install + runtime mechanism (version pinning, tray, sync-spec validation) |
 
 ## Adjacent surfaces
 

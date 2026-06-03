@@ -136,6 +136,7 @@ nav:
       - TeamExecutor: repos/teamexecutor.md
       - DAGExecutor: repos/dagexecutor.md
       - CritiqueExecutor: repos/critiqueexecutor.md
+      - SyncMechanism: repos/syncmechanism.md
       - External Integrations: repos/external-integrations.md
   - Diagrams:
       - Overview: diagrams/index.md

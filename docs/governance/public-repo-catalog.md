@@ -36,6 +36,7 @@ catalog entries.
 | PlatformDeployment | deployment_runtime | local/CI runtime glue | environment assembly and wrapper layer | graph semantics, orchestration policy | Custodian, OperationsCenter | repo license | active |
 | SourceRegistry | source_lifecycle | source and fork tracking | source inventory and lifecycle | graph semantics, orchestration policy | OperationsCenter, Custodian | repo license | active |
 | Warehouse | context_staging | LLM-ready context packaging | utility-only packaging/staging | graph authority, orchestration, governance | operators, assistant workflows | repo license | active |
+| SyncMechanism | sync_transport | public-safe Syncthing install + runtime mechanism | install/upgrade, tray, login-startup, sync-spec validation | device/folder registry, secrets, fleet wiring, backup/restore | private fleet layer (consumer) | repo license | active |
 
 ## Related pages
 
