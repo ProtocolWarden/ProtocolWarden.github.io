@@ -177,3 +177,7 @@ Corrected DagExecutor → DAGExecutor in docs/repos/dagexecutor.md (repo name an
 ## 2026-05-23 — Fix: commit architecture index links
 
 - index.md links to Sync & Data Transport + Spec Director Refactor were left uncommitted in PR #5 (omitted from git add); landing them now so the pages are linked from a tracked doc (DC7).
+
+## 2026-06-03 — Doc reconciliation: add SyncMechanism page; document ContextLifecycle tiered memory
+
+§7c doc-reconciliation against PlatformManifest ground truth (19 public repos). SyncMechanism (public, fleet_sync_mechanism) was absent from the public catalog — added docs/repos/syncmechanism.md and listed it in mkdocs nav, repos/index.md, and governance/public-repo-catalog.md. ContextLifecycle's now-shipped context-injection/tiered-memory capability (warm routing, cold store, consolidation, cl context init) was undocumented — added a "Context injection (tiered memory)" section to repos/contextlifecycle.md and updated its catalog one-liner. Boundary-checked: VideoFoundry/SyncControl/PrivateManifest are not public in the manifest, so correctly remain absent. Nav refs all resolve.
