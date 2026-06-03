@@ -20,7 +20,7 @@ _Not a task tracker — that's backlog.md. Keep entries concise and dated._
 
 ## 2026-05-21 — Fix B1 boundary violation in contextlifecycle.md
 
-Removed VideoFoundry (private) from "Consuming repos" section. Custodian B1 caught it on pre-push.
+Removed a private repo name from the "Consuming repos" section. Custodian B1 caught it on pre-push.
 Replaced with generic "Private project repos" — public catalog cannot name private repos.
 
 ## 2026-05-21 — Add ContextLifecycle to repo catalog
@@ -180,4 +180,4 @@ Corrected DagExecutor → DAGExecutor in docs/repos/dagexecutor.md (repo name an
 
 ## 2026-06-03 — Doc reconciliation: add SyncMechanism page; document ContextLifecycle tiered memory
 
-§7c doc-reconciliation against PlatformManifest ground truth (19 public repos). SyncMechanism (public, fleet_sync_mechanism) was absent from the public catalog — added docs/repos/syncmechanism.md and listed it in mkdocs nav, repos/index.md, and governance/public-repo-catalog.md. ContextLifecycle's now-shipped context-injection/tiered-memory capability (warm routing, cold store, consolidation, cl context init) was undocumented — added a "Context injection (tiered memory)" section to repos/contextlifecycle.md and updated its catalog one-liner. Boundary-checked: VideoFoundry/SyncControl/PrivateManifest are not public in the manifest, so correctly remain absent. Nav refs all resolve.
+§7c doc-reconciliation against PlatformManifest ground truth (19 public repos). SyncMechanism (public, fleet_sync_mechanism) was absent from the public catalog — added docs/repos/syncmechanism.md and listed it in mkdocs nav, repos/index.md, and governance/public-repo-catalog.md. ContextLifecycle's now-shipped context-injection/tiered-memory capability (warm routing, cold store, consolidation, cl context init) was undocumented — added a "Context injection (tiered memory)" section to repos/contextlifecycle.md and updated its catalog one-liner. Boundary-checked: repos absent from the public manifest correctly remain absent (no private names recorded here). Nav refs all resolve.
