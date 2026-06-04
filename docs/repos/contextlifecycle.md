@@ -21,7 +21,7 @@ It provides:
 
 Beyond enforcing the session boundary, ContextLifecycle keeps a project's
 durable knowledge in front of the agent — pushed, not searched-for — across
-three tiers:
+three tiers, kept in balance by a consolidation pass:
 
 - **Warm** — a glob → leaf-doc routing table (`routes.yaml`). On a Write/Edit,
   the pre-tool hook injects the matching convention docs as the model's
@@ -29,6 +29,11 @@ three tiers:
 - **Cold** — `.context/knowledge/` durable findings. The same routing pass
   surfaces matching findings as a one-line index (so cold is never write-only),
   expandable on demand.
+- **Hot** — the compiled startup context itself. The compiler keeps only the
+  anchor — the active task, guidelines, and the most-recent log/backlog entries —
+  trimming accumulated history out of the *compiled* blob while leaving the
+  source files whole. This keeps the boot context bounded no matter how long a
+  project's log grows.
 - **Consolidation** — a promotion pass distills cold → warm under a
   *consequence veto* (a finding is only promoted once it was acted on and
   survived — landed in a commit with tests green), with usage-decay and pinning
