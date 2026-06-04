@@ -1,10 +1,3 @@
----
-architecture_status: CURRENT
-canonical: true
-supersedes: []
-superseded_by: null
----
-
 # Simple Platform Model
 
 RepoGraph defines the language.
