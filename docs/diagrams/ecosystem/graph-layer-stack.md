@@ -21,7 +21,7 @@ graph TB
 
   subgraph priv["Private / Runtime Layer"]
     direction TB
-    PM_PRIV["PrivateManifest<br/>private names · restricted edges"]
+    PM_PRIV["private-manifest repo<br/>private names · restricted edges"]
     PD["PlatformDeployment<br/>local topography · runtime placement truth"]
   end
 
@@ -42,7 +42,7 @@ graph TB
 |-------|------|------|--------------|
 | Language | RepoGraph | graph vocabulary — ontology, topology, projection semantics, artifact schemas | graph instances, runtime placement truth |
 | Public Instance | PlatformManifest | canonical public graph declaration, boundary artifact publication | graph language definitions, deployment truth |
-| Private/Runtime | PrivateManifest, PlatformDeployment | private name overlays, local runtime topography | public projection rules, graph language |
+| Private/Runtime | private-manifest repo, PlatformDeployment | private name overlays, local runtime topography | public projection rules, graph language |
 | Validation | Custodian | auditing public repos against boundary artifacts | graph authoring, publication |
 
 ## The Topography Boundary

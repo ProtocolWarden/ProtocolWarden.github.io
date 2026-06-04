@@ -17,7 +17,7 @@ Core invariants that every platform component must uphold:
 | PlatformManifest | public graph instance + projection publisher | semantic vocabulary owner, private data store, orchestrator |
 | PlatformDeployment | local topography and runtime placement truth | canonical architecture owner, ontology owner |
 | Warehouse | context packaging utility | platform authority, topology owner, scheduler |
-| PrivateManifest | private graph overlay (names, restricted edges) | public projection authority, canonical semantic owner |
+| private-manifest repo | private graph overlay (names, restricted edges) | public projection authority, canonical semantic owner |
 | Custodian | audit engine and drift detector | topology truth holder, orchestration behavior owner |
 | OperationsCenter | orchestration and task dispatch | canonical ontology owner, private manifest holder |
 
@@ -28,7 +28,7 @@ The following are enforced on every `custodian audit` run:
 | Detector | Scope | Checks |
 |----------|-------|--------|
 | ARCH1 | Warehouse | README describes it as a context packaging utility, not a platform or governance authority |
-| ARCH2 | PrivateManifest | Does not define its own manifest vocabulary (schema files, Enum/RelationshipKind/ProjectionBehavior in Python) |
+| ARCH2 | private-manifest repo | Does not define its own manifest vocabulary (schema files, Enum/RelationshipKind/ProjectionBehavior in Python) |
 | ARCH3 | PlatformDeployment | Docs do not claim canonical architecture ownership |
 | ARCH4 | RepoGraph | README does not claim graph instance ownership, private truth, or orchestration behavior |
 
