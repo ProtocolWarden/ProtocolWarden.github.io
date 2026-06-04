@@ -6,6 +6,8 @@ privacy:
   require_boundary_artifact: true
 
 audit:
+  # This repo's .console is reconciled + leak-free and under budget; enforce R1/R2.
+  reconcile_enforce: true
   exclude_paths:
     T1:
       - "docs/**"

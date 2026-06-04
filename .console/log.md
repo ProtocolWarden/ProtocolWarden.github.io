@@ -1,5 +1,14 @@
 # Log
 
+## 2026-06-04 — Console reconciliation: enable R1/R2 enforcement
+
+Enforce-only pass per the console-reconciliation spec (§6). This repo's `.console/`
+is already reconciled, under budget (log 183 lines < 400), and leak-free. Set
+`audit.reconcile_enforce: true` in `.custodian/config.yaml` so Custodian's R1/R2
+detectors run for this repo. Verified `cl reconcile check` GREEN and a scoped
+Custodian audit (`--only R1,R2`) returns 0 findings. `git grep` for scrub-target
+identifiers in tracked `.console`/`docs` is empty.
+
 ## 2026-05-23 — Fix Mermaid 11.x diagram syntax across docs
 
 Mermaid 11.15.0 is stricter: literal `\n` in node labels is not a line break, and
