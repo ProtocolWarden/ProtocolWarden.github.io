@@ -2,9 +2,9 @@
 
 How agent sessions across the platform remember things — what persists, what
 doesn't, how knowledge travels between machines, and how lessons learned feed
-back into future sessions. The canonical deep version of this page lives in
-PlatformManifest (`docs/architecture/cognition-memory-overview.md`); this is
-the simplified public map.
+back into future sessions. The canonical deep version of this page lives in PlatformManifest's
+architecture docs (the cognition-memory overview); this is the simplified
+public map.
 
 ## The core idea
 

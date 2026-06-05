@@ -20,6 +20,7 @@ Start with the [Platform Architecture Charter](platform-architecture-charter.md)
 - [Observability Model](observability-model.md)
 - [Topology Model](topology-model.md)
 - [Sync & Data Transport](sync-and-data-transport.md)
+- [Cognition & Memory Model](cognition-memory.md)
 - [Spec Director Refactor](spec-director-refactor.md)
 
 ## Stable Baselines
