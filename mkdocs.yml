@@ -74,6 +74,7 @@ nav:
       - Observability Model: architecture/observability-model.md
       - Topology Model: architecture/topology-model.md
       - Sync & Data Transport: architecture/sync-and-data-transport.md
+      - Cognition & Memory Model: architecture/cognition-memory.md
       - Spec Director Refactor: architecture/spec-director-refactor.md
       - Stable Baselines:
           - RepoGraph Post-PASS Hardening: architecture/stable-baselines/repograph-post-pass-hardening-v1.md
