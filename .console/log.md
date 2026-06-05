@@ -1,5 +1,10 @@
 # Log
 
+## 2026-06-05 — add Cognition & Memory Model page
+New architecture page connecting anchoring, the memory tiers (hot/console/warm/cold/session),
+cross-machine sync semantics, and the knowledge lifecycle (capture → reconcile → inject).
+Public-safe simplification of the canonical PlatformManifest overview doc; boundary-scanned.
+
 ## 2026-06-04 — Console reconciliation: enable R1/R2 enforcement
 
 Enforce-only pass per the console-reconciliation spec (§6). This repo's `.console/`
