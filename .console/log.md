@@ -1,5 +1,13 @@
 # Log
 
+## 2026-06-05 — fix: DC2/DC7 findings on the cognition-memory page
+PR #15 merged at a stale head: the commit carrying the DC2 (dead cross-repo path reference)
+and DC7 (orphan — no index link) fixes was rejected by the pre-commit hook during an amend
+and the working tree masked it from pre-push; an unconditional merge then landed the unfixed
+version. This restores the fixed wording + the architecture/index.md link. Lesson logged in
+PlatformManifest: verify `git status` clean after any --amend; never chain `gh pr merge`
+unconditionally after checks.
+
 ## 2026-06-05 — add Cognition & Memory Model page
 New architecture page connecting anchoring, the memory tiers (hot/console/warm/cold/session),
 cross-machine sync semantics, and the knowledge lifecycle (capture → reconcile → inject).
